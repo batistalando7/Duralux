@@ -13,9 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('dashboard.crm.index');
-});
 
 Route::get('/Analytics', function () {
     return view('dashboard.Analytics.index');
