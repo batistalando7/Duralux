@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('applications.calendar.index');
+
+Route::get('/Analytics', function () {
+    return view('dashboard.Analytics.index');
 });
