@@ -18,8 +18,8 @@
                         <span class="nxl-mtext">Dashboards</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                     </a>
                     <ul class="nxl-submenu">
-                        <li class="nxl-item"><a class="nxl-link" href="index.html">CRM</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="analytics.html">Analytics</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/">CRM</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/analytics">Analytics</a></li>
                     </ul>
                 </li>
                 <li class="nxl-item nxl-hasmenu">
@@ -28,10 +28,10 @@
                         <span class="nxl-mtext">Reports</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                     </a>
                     <ul class="nxl-submenu">
-                        <li class="nxl-item"><a class="nxl-link" href="reports-sales.html">Sales Report</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="reports-leads.html">Leads Report</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="reports-project.html">Project Report</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="reports-timesheets.html">Timesheets Report</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Reports/reportsSales">Sales Report</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Reports/reportsLeads">Leads Report</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Reports/reportsProject">Project Report</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Reports/reportsTimesheets">Timesheets Report</a></li>
                     </ul>
                 </li>
                 <li class="nxl-item nxl-hasmenu">
@@ -40,12 +40,12 @@
                         <span class="nxl-mtext">Applications</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                     </a>
                     <ul class="nxl-submenu">
-                        <li class="nxl-item"><a class="nxl-link" href="apps-chat.html">Chat</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="apps-email.html">Email</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="apps-tasks.html">Tasks</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="apps-notes.html">Notes</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="apps-storage.html">Storage</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="apps-calendar.html">Calendar</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Applications/appsChat">Chat</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Applications/appsEmail">Email</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Applications/appsTasks">Tasks</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Applications/appsNotes">Notes</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Applications/appsStorage">Storage</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Applications/appsCalendar">Calendar</a></li>
                     </ul>
                 </li>
                 <li class="nxl-item nxl-hasmenu">
@@ -66,9 +66,9 @@
                         <span class="nxl-mtext">Payment</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                     </a>
                     <ul class="nxl-submenu">
-                        <li class="nxl-item"><a class="nxl-link" href="payment.html">Payment</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="invoice-view.html">Invoice View</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="invoice-create.html">Invoice Create</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/payment">Payment</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/payment/invoiceView">Invoice View</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/payment/invoiceCreate">Invoice Create</a></li>
                     </ul>
                 </li>
                 <li class="nxl-item nxl-hasmenu">
@@ -77,9 +77,9 @@
                         <span class="nxl-mtext">Customers</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                     </a>
                     <ul class="nxl-submenu">
-                        <li class="nxl-item"><a class="nxl-link" href="customers.html">Customers</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="customers-view.html">Customers View</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="customers-create.html">Customers Create</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/customers">Customers</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/customers/customersView">Customers View</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/customers/customersCreate">Customers Create</a></li>
                     </ul>
                 </li>
                 <li class="nxl-item nxl-hasmenu">
@@ -88,9 +88,9 @@
                         <span class="nxl-mtext">Leads</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                     </a>
                     <ul class="nxl-submenu">
-                        <li class="nxl-item"><a class="nxl-link" href="leads.html">Leads</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="leads-view.html">Leads View</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="leads-create.html">Leads Create</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/leads">Leads</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/leads/leadsView">Leads View</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/leads/leadsCreate">Leads Create</a></li>
                     </ul>
                 </li>
                 <li class="nxl-item nxl-hasmenu">
@@ -99,9 +99,9 @@
                         <span class="nxl-mtext">Projects</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                     </a>
                     <ul class="nxl-submenu">
-                        <li class="nxl-item"><a class="nxl-link" href="projects.html">Projects</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="projects-view.html">Projects View</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="projects-create.html">Projects Create</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/projects">Projects</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/projects/projectsView">Projects View</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/projects/projectsCreate">Projects Create</a></li>
                     </ul>
                 </li>
                 <li class="nxl-item nxl-hasmenu">
@@ -110,11 +110,11 @@
                         <span class="nxl-mtext">Widgets</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                     </a>
                     <ul class="nxl-submenu">
-                        <li class="nxl-item"><a class="nxl-link" href="widgets-lists.html">Lists</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="widgets-tables.html">Tables</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="widgets-charts.html">Charts</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="widgets-statistics.html">Statistics</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="widgets-miscellaneous.html">Miscellaneous</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Widgets/widgetsLists">Lists</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Widgets/widgetsTables">Tables</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Widgets/widgetsCharts">Charts</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Widgets/widgetsStatistics">Statistics</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Widgets/widgetsMiscellaneous">Miscellaneous</a></li>
                     </ul>
                 </li>
                 <li class="nxl-item nxl-hasmenu">
@@ -123,19 +123,19 @@
                         <span class="nxl-mtext">Settings</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                     </a>
                     <ul class="nxl-submenu">
-                        <li class="nxl-item"><a class="nxl-link" href="settings-general.html">General</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="settings-seo.html">SEO</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="settings-tags.html">Tags</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="settings-email.html">Email</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="settings-tasks.html">Tasks</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="settings-leads.html">Leads</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="settings-support.html">Support</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="settings-finance.html">Finance</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="settings-gateways.html">Gateways</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="settings-customers.html">Customers</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="settings-localization.html">Localization</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="settings-recaptcha.html">reCAPTCHA</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="settings-miscellaneous.html">Miscellaneous</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Settings/settingsGeneral">General</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Settings/settingsSeo">SEO</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Settings/settingsTags">Tags</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Settings/settingsEmail">Email</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Settings/settingsTasks">Tasks</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Settings/settingsLeads">Leads</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Settings/settingsSupport">Support</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Settings/settingsFinance">Finance</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Settings/settingsGateways">Gateways</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Settings/settingsCustomers">Customers</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Settings/settingsLocalization">Localization</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Settings/settingsRecaptcha">reCAPTCHA</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Settings/settingsMiscellaneous">Miscellaneous</a></li>
                     </ul>
                 </li>
                 <li class="nxl-item nxl-hasmenu">
@@ -149,9 +149,9 @@
                                 <span class="nxl-mtext">Login</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                             </a>
                             <ul class="nxl-submenu">
-                                <li class="nxl-item"><a class="nxl-link" href="auth-login-cover.html">Cover</a></li>
-                                <li class="nxl-item"><a class="nxl-link" href="auth-login-minimal.html">Minimal</a></li>
-                                <li class="nxl-item"><a class="nxl-link" href="auth-login-creative.html">Creative</a></li>
+                                <li class="nxl-item"><a class="nxl-link" href="/Login/authLoginCover">Cover</a></li>
+                                <li class="nxl-item"><a class="nxl-link" href="/Login/authLoginMinimal">Minimal</a></li>
+                                <li class="nxl-item"><a class="nxl-link" href="/Login/authLoginCreative">Creative</a></li>
                             </ul>
                         </li>
                         <li class="nxl-item nxl-hasmenu">
@@ -159,9 +159,9 @@
                                 <span class="nxl-mtext">Register</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                             </a>
                             <ul class="nxl-submenu">
-                                <li class="nxl-item"><a class="nxl-link" href="auth-register-cover.html">Cover</a></li>
-                                <li class="nxl-item"><a class="nxl-link" href="auth-register-minimal.html">Minimal</a></li>
-                                <li class="nxl-item"><a class="nxl-link" href="auth-register-creative.html">Creative</a></li>
+                                <li class="nxl-item"><a class="nxl-link" href="/Register/authRegisterCover">Cover</a></li>
+                                <li class="nxl-item"><a class="nxl-link" href="/Register/authRegisterMinimal">Minimal</a></li>
+                                <li class="nxl-item"><a class="nxl-link" href="/Register/authRegisterCreative">Creative</a></li>
                             </ul>
                         </li>
                         <li class="nxl-item nxl-hasmenu">
@@ -169,9 +169,9 @@
                                 <span class="nxl-mtext">Error-404</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                             </a>
                             <ul class="nxl-submenu">
-                                <li class="nxl-item"><a class="nxl-link" href="auth-404-cover.html">Cover</a></li>
-                                <li class="nxl-item"><a class="nxl-link" href="auth-404-minimal.html">Minimal</a></li>
-                                <li class="nxl-item"><a class="nxl-link" href="auth-404-creative.html">Creative</a></li>
+                                <li class="nxl-item"><a class="nxl-link" href="/Error/auth404cover">Cover</a></li>
+                                <li class="nxl-item"><a class="nxl-link" href="/Error/auth404minimal">Minimal</a></li>
+                                <li class="nxl-item"><a class="nxl-link" href="/Error/auth404creative">Creative</a></li>
                             </ul>
                         </li>
                         <li class="nxl-item nxl-hasmenu">
@@ -179,9 +179,9 @@
                                 <span class="nxl-mtext">Reset Pass</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                             </a>
                             <ul class="nxl-submenu">
-                                <li class="nxl-item"><a class="nxl-link" href="auth-reset-cover.html">Cover</a></li>
-                                <li class="nxl-item"><a class="nxl-link" href="auth-reset-minimal.html">Minimal</a></li>
-                                <li class="nxl-item"><a class="nxl-link" href="auth-reset-creative.html">Creative</a></li>
+                                <li class="nxl-item"><a class="nxl-link" href="/Reset/authResetCover">Cover</a></li>
+                                <li class="nxl-item"><a class="nxl-link" href="/Reset/authResetMinimal">Minimal</a></li>
+                                <li class="nxl-item"><a class="nxl-link" href="/Reset/authResetCreative">Creative</a></li>
                             </ul>
                         </li>
                         <li class="nxl-item nxl-hasmenu">
@@ -189,9 +189,9 @@
                                 <span class="nxl-mtext">Verify OTP</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                             </a>
                             <ul class="nxl-submenu">
-                                <li class="nxl-item"><a class="nxl-link" href="auth-verify-cover.html">Cover</a></li>
-                                <li class="nxl-item"><a class="nxl-link" href="auth-verify-minimal.html">Minimal</a></li>
-                                <li class="nxl-item"><a class="nxl-link" href="auth-verify-creative.html">Creative</a></li>
+                                <li class="nxl-item"><a class="nxl-link" href="/VerifyOTP/authVerifyCover">Cover</a></li>
+                                <li class="nxl-item"><a class="nxl-link" href="/VerifyOTP/authVerifyMinimal">Minimal</a></li>
+                                <li class="nxl-item"><a class="nxl-link" href="/VerifyOTP/authVerifyCreative">Creative</a></li>
                             </ul>
                         </li>
                         <li class="nxl-item nxl-hasmenu">
@@ -199,9 +199,9 @@
                                 <span class="nxl-mtext">Maintenance</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                             </a>
                             <ul class="nxl-submenu">
-                                <li class="nxl-item"><a class="nxl-link" href="auth-maintenance-cover.html">Cover</a></li>
-                                <li class="nxl-item"><a class="nxl-link" href="auth-maintenance-minimal.html">Minimal</a></li>
-                                <li class="nxl-item"><a class="nxl-link" href="auth-maintenance-creative.html">Creative</a></li>
+                                <li class="nxl-item"><a class="nxl-link" href="/Maintenance/authMaintenanceCover">Cover</a></li>
+                                <li class="nxl-item"><a class="nxl-link" href="/Maintenance/authMaintenanceMinimal">Minimal</a></li>
+                                <li class="nxl-item"><a class="nxl-link" href="/Maintenance/authMaintenanceCreative">Creative</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -213,8 +213,8 @@
                     </a>
                     <ul class="nxl-submenu">
                         <li class="nxl-item"><a class="nxl-link" href="#/">Support</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="help-knowledgebase.html">KnowledgeBase</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href=".docs/documentations.html">Documentations</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/Help/help-knowledgebase">KnowledgeBase</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href=".docs/documentations">Documentations</a></li>
                     </ul>
                 </li>
             </ul>
