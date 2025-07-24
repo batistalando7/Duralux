@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/Analytics', function () {
     return view('dashboard.Analytics.index');
 });
+
