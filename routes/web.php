@@ -164,6 +164,7 @@ Route::get('/customers/customersCreate', function(){
     return view('customers.customersCreate.index');
 
 });
+
 /*-------------------------------------------------------
                     payment routes
 -------------------------------------------------------*/
@@ -184,6 +185,7 @@ Route::get('/payment/invoiceCreate', function(){
 
 });
 
+
 /*-------------------------------------------------------
                     widgets routes
 -------------------------------------------------------*/
@@ -203,3 +205,4 @@ Route::get('/widgets/miscellaneous', function () {
 Route::get('/widgets/statistics', function () {
     return view('widgets.statistics.index');
 });
+
