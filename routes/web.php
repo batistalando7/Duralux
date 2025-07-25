@@ -172,15 +172,47 @@ Route::get('/customers/customersCreate', function(){
 Route::get('/widgets/lists', function () {
     return view('widgets.lists.index');
 });
+
 Route::get('/widgets/tables', function () {
     return view('widgets.tables.index');
 });
+
 Route::get('/widgets/charts', function () {
     return view('widgets.charts.index');
 });
+
 Route::get('/widgets/miscellaneous', function () {
     return view('widgets.miscellaneous.index');
 });
+
 Route::get('/widgets/statistics', function () {
     return view('widgets.statistics.index');
+});
+
+/*-------------------------------------------------------
+                    authentication routes
+-------------------------------------------------------*/
+
+Route::get('/authentication/login/creative', function () {
+    return view('authentication.login.creative.index');
+});
+
+Route::get('/authentication/error-404/creative', function () {
+    return view('authentication.error-404.creative.index');
+});
+
+Route::get('/authentication/register/creative', function () {
+    return view('authentication.register.creative.index');
+});
+
+Route::get('/authentication/maintenance/creative', function () {
+    return view('authentication.maintenance.creative.index');
+});
+
+Route::get('/authentication/reset_pass/creative', function () {
+    return view('authentication.reset_pass.creative.index');
+});
+
+Route::get('/authentication/verify_otp/creative', function () {
+    return view('authentication.verify_otp.creative.index');
 });
