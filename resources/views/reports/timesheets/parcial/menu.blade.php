@@ -21,8 +21,8 @@
                         <span class="nxl-mtext">Dashboards</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                     </a>
                     <ul class="nxl-submenu">
-                        <li class="nxl-item"><a class="nxl-link" href="index">CRM</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="analytics">Analytics</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/">CRM</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="/analytics">Analytics</a></li>
                     </ul>
                 </li>
                 <li class="nxl-item nxl-hasmenu">
