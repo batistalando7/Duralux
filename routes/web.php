@@ -165,40 +165,41 @@ Route::get('/customers/customersCreate', function(){
 
 });
 /*-------------------------------------------------------
-                    leads routes
+                    payment routes
 -------------------------------------------------------*/
 
-Route::get('/leads', function(){
+Route::get('/payment', function(){
 
-    return view('leads.leads.index');
-
-});
-Route::get('/leads/leadsView', function(){
-
-    return view('leads.leadsView.index');
+    return view('payment.payment.index');
 
 });
-Route::get('/leads/leadsCreate', function(){
+Route::get('/payment/invoiceView', function(){
 
-    return view('leads.leadsCreate.index');
+    return view('payment.invoiceView.index');
 
 });
+Route::get('/payment/invoiceCreate', function(){
+
+    return view('payment.invoiceCreate.index');
+
+});
+
 /*-------------------------------------------------------
-                    projects routes
+                    widgets routes
 -------------------------------------------------------*/
 
-Route::get('/projects', function(){
-
-    return view('projects.projects.index');
-
+Route::get('/widgets/lists', function () {
+    return view('widgets.lists.index');
 });
-Route::get('/projects/projectsView', function(){
-
-    return view('projects.projectsView.index');
-
+Route::get('/widgets/tables', function () {
+    return view('widgets.tables.index');
 });
-Route::get('/projects/projectsCreate', function(){
-
-    return view('projects.projectsCreate.index');
-
+Route::get('/widgets/charts', function () {
+    return view('widgets.charts.index');
+});
+Route::get('/widgets/miscellaneous', function () {
+    return view('widgets.miscellaneous.index');
+});
+Route::get('/widgets/statistics', function () {
+    return view('widgets.statistics.index');
 });
