@@ -14,6 +14,153 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+
+
+/*-------------------------------------------------------
+                    Dashboard routes
+-------------------------------------------------------*/
 Route::get('/', function () {
+    return view('dashboard.crm.index');
+});
+
+Route::get('/analytics', function () {
     return view('dashboard.Analytics.index');
+});
+/*-------------------------------------------------------
+                    Proposal routes
+-------------------------------------------------------*/
+Route::get('/proposal', function () {
+
+
+
+    return view('proposal.proposal.index');
+
+
+});
+
+
+Route::get('/proposal/proposalView', function () {
+
+
+    return view('proposal.proposalView.index');
+
+
+});
+
+
+Route::get('/proposal/proposalEdit', function () {
+
+
+    return view('proposal.proposalEdit.index');
+
+
+});
+
+
+Route::get('/proposal/proposalCreate', function () {
+
+
+    return view('proposal.proposalCreate.index');
+
+
+});
+
+/*-------------------------------------------------------
+                    reports routes
+-------------------------------------------------------*/
+
+Route::get('/Reports/reportsSales', function () {
+
+
+    return view('reports.sales.index');
+
+
+});
+Route::get('/Reports/reportsLeads', function () {
+
+
+    return view('reports.leads.index');
+
+
+});
+Route::get('/Reports/reportsProject', function () {
+
+
+    return view('reports.project.index');
+
+
+});
+Route::get('/Reports/reportsTimesheets', function () {
+
+
+    return view('reports.timesheets.index');
+
+
+});
+
+/*-------------------------------------------------------
+                    aplications routes
+-------------------------------------------------------*/
+
+Route::get('/Applications/appsChat', function () {
+
+
+    return view('applications.chat.index');
+
+
+});
+Route::get('/Applications/appsEmail', function () {
+
+
+    return view('applications.email.index');
+
+
+});
+Route::get('/Applications/appsTasks', function () {
+
+
+    return view('applications.tasks.index');
+
+
+});
+Route::get('/Applications/appsNotes', function () {
+
+
+    return view('applications.notes.index');
+
+
+});
+Route::get('/Applications/appsStorage', function () {
+
+
+    return view('applications.storage.index');
+
+
+});
+Route::get('/Applications/appsCalendar', function () {
+
+
+    return view('applications.calendar.index');
+
+
+});
+
+/*-------------------------------------------------------
+                    aplications routes
+-------------------------------------------------------*/
+
+Route::get('/customers', function(){
+
+    return view('customers.customers.index');
+
+});
+Route::get('/customers/customersView', function(){
+
+    return view('customers.customersView.index');
+
+});
+Route::get('/customers/customersCreate', function(){
+
+    return view('customers.customersCreate.index');
+
 });
