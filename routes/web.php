@@ -146,7 +146,7 @@ Route::get('/Applications/appsCalendar', function () {
 });
 
 /*-------------------------------------------------------
-                    aplications routes
+                    customers routes
 -------------------------------------------------------*/
 
 Route::get('/customers', function(){
@@ -164,6 +164,27 @@ Route::get('/customers/customersCreate', function(){
     return view('customers.customersCreate.index');
 
 });
+
+/*-------------------------------------------------------
+                    payment routes
+-------------------------------------------------------*/
+
+Route::get('/payment', function(){
+
+    return view('payment.payment.index');
+
+});
+Route::get('/payment/invoiceView', function(){
+
+    return view('payment.invoiceView.index');
+
+});
+Route::get('/payment/invoiceCreate', function(){
+
+    return view('payment.invoiceCreate.index');
+
+});
+
 
 /*-------------------------------------------------------
                     widgets routes
@@ -189,6 +210,7 @@ Route::get('/widgets/statistics', function () {
     return view('widgets.statistics.index');
 });
 
+<<<<<<< HEAD
 /*-------------------------------------------------------
                     authentication routes
 -------------------------------------------------------*/
@@ -216,3 +238,5 @@ Route::get('/authentication/reset_pass/creative', function () {
 Route::get('/authentication/verify_otp/creative', function () {
     return view('authentication.verify_otp.creative.index');
 });
+=======
+>>>>>>> 8464611d7cb057402b2cbb6548cd68558a5ea7d4

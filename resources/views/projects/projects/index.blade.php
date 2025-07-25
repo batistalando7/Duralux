@@ -1,17 +1,17 @@
-@extends('payment.payment.layout.principal')
-@section('title', 'Duralux || Payment')
-@section('content-payment')
+@extends('projects.projects.layout.principal')
+@section('title', 'Projects')
+@section('content-projects')
 
 <div class="nxl-content">
     <!-- [ page-header ] start -->
     <div class="page-header">
         <div class="page-header-left d-flex align-items-center">
             <div class="page-header-title">
-                <h5 class="m-b-10">Payment</h5>
+                <h5 class="m-b-10">Projects</h5>
             </div>
             <ul class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item">Payment</li>
+                <li class="breadcrumb-item">Projects</li>
             </ul>
         </div>
         <div class="page-header-right ms-auto">
@@ -32,45 +32,36 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
                             <a href="javascript:void(0);" class="dropdown-item">
-                                <i class="feather-eye me-3"></i>
-                                <span>All</span>
+                                <span class="wd-7 ht-7 bg-primary rounded-circle d-inline-block me-3"></span>
+                                <span>Alls</span>
                             </a>
                             <a href="javascript:void(0);" class="dropdown-item">
-                                <i class="feather-send me-3"></i>
-                                <span>Sent</span>
+                                <span class="wd-7 ht-7 bg-indigo rounded-circle d-inline-block me-3"></span>
+                                <span>On Hold</span>
                             </a>
                             <a href="javascript:void(0);" class="dropdown-item">
-                                <i class="feather-book-open me-3"></i>
-                                <span>Open</span>
+                                <span class="wd-7 ht-7 bg-warning rounded-circle d-inline-block me-3"></span>
+                                <span>Pending</span>
                             </a>
                             <a href="javascript:void(0);" class="dropdown-item">
-                                <i class="feather-archive me-3"></i>
-                                <span>Draft</span>
+                                <span class="wd-7 ht-7 bg-success rounded-circle d-inline-block me-3"></span>
+                                <span>Finished</span>
                             </a>
                             <a href="javascript:void(0);" class="dropdown-item">
-                                <i class="feather-bell me-3"></i>
-                                <span>Revised</span>
-                            </a>
-                            <a href="javascript:void(0);" class="dropdown-item">
-                                <i class="feather-shield-off me-3"></i>
+                                <span class="wd-7 ht-7 bg-danger rounded-circle d-inline-block me-3"></span>
                                 <span>Declined</span>
                             </a>
                             <a href="javascript:void(0);" class="dropdown-item">
-                                <i class="feather-check me-3"></i>
-                                <span>Accepted</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a href="javascript:void(0);" class="dropdown-item">
-                                <i class="feather-briefcase me-3"></i>
-                                <span>Leads</span>
+                                <span class="wd-7 ht-7 bg-teal rounded-circle d-inline-block me-3"></span>
+                                <span>In Progress</span>
                             </a>
                             <a href="javascript:void(0);" class="dropdown-item">
-                                <i class="feather-wifi-off me-3"></i>
-                                <span>Expired</span>
+                                <span class="wd-7 ht-7 bg-success rounded-circle d-inline-block me-3"></span>
+                                <span>Not Started</span>
                             </a>
                             <a href="javascript:void(0);" class="dropdown-item">
-                                <i class="feather-users me-3"></i>
-                                <span>Customers</span>
+                                <span class="wd-7 ht-7 bg-warning rounded-circle d-inline-block me-3"></span>
+                                <span>My Projects</span>
                             </a>
                         </div>
                     </div>
@@ -106,9 +97,9 @@
                             </a>
                         </div>
                     </div>
-                    <a href="invoice-create.html" class="btn btn-primary">
+                    <a href="projects-create.html" class="btn btn-primary">
                         <i class="feather-plus me-2"></i>
-                        <span>Create Invoice</span>
+                        <span>Create Prject</span>
                     </a>
                 </div>
             </div>
@@ -125,14 +116,23 @@
                 <div class="col-xxl-3 col-md-6">
                     <div class="card stretch stretch-full">
                         <div class="card-body">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <a href="javascript:void(0);" class="fw-bold d-block">
-                                    <span class="d-block">Paid</span>
-                                    <span class="fs-20 fw-bold d-block">78/100</span>
-                                </a>
-                                <div class="badge bg-soft-success text-success">
-                                    <i class="feather-arrow-up fs-10 me-1"></i>
-                                    <span>36.85%</span>
+                            <a href="javascript:void(0);" class="fw-bold d-block">
+                                <span class="d-block">Not Started</span>
+                                <span class="fs-24 fw-bolder d-block">04</span>
+                            </a>
+                            <div class="pt-4">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <a href="javascript:void(0);" class="fs-12 fw-medium text-muted">
+                                        <span>Invoices Awaiting</span>
+                                        <i class="feather-link-2 fs-10 ms-1"></i>
+                                    </a>
+                                    <div>
+                                        <span class="fs-12 text-muted">$5,569</span>
+                                        <span class="fs-11 text-muted">(56%)</span>
+                                    </div>
+                                </div>
+                                <div class="progress mt-2 ht-3">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 56%"></div>
                                 </div>
                             </div>
                         </div>
@@ -141,14 +141,23 @@
                 <div class="col-xxl-3 col-md-6">
                     <div class="card stretch stretch-full">
                         <div class="card-body">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <a href="javascript:void(0);" class="fw-bold d-block">
-                                    <span class="d-block">Unpaid</span>
-                                    <span class="fs-20 fw-bold d-block">38/50</span>
-                                </a>
-                                <div class="badge bg-soft-danger text-danger">
-                                    <i class="feather-arrow-down fs-10 me-1"></i>
-                                    <span>23.45%</span>
+                            <a href="javascript:void(0);" class="fw-bold d-block">
+                                <span class="d-block">In Progress</span>
+                                <span class="fs-24 fw-bolder d-block">06</span>
+                            </a>
+                            <div class="pt-4">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <a href="javascript:void(0);" class="fs-12 fw-medium text-muted">
+                                        <span>Projects In Progress</span>
+                                        <i class="feather-link-2 fs-10 ms-1"></i>
+                                    </a>
+                                    <div>
+                                        <span class="fs-12 text-muted">16 Completed</span>
+                                        <span class="fs-11 text-muted">(78%)</span>
+                                    </div>
+                                </div>
+                                <div class="progress mt-2 ht-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 78%"></div>
                                 </div>
                             </div>
                         </div>
@@ -157,14 +166,23 @@
                 <div class="col-xxl-3 col-md-6">
                     <div class="card stretch stretch-full">
                         <div class="card-body">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <a href="javascript:void(0);" class="fw-bold d-block">
-                                    <span class="d-block">Overdue</span>
-                                    <span class="fs-20 fw-bold d-block">15/30</span>
-                                </a>
-                                <div class="badge bg-soft-success text-success">
-                                    <i class="feather-arrow-up fs-10 me-1"></i>
-                                    <span>25.44%</span>
+                            <a href="javascript:void(0);" class="fw-bold d-block">
+                                <span class="d-block">Cancelled</span>
+                                <span class="fs-24 fw-bolder d-block">02</span>
+                            </a>
+                            <div class="pt-4">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <a href="javascript:void(0);" class="fs-12 fw-medium text-muted">
+                                        <span>Converted Leads</span>
+                                        <i class="feather-link-2 fs-10 ms-1"></i>
+                                    </a>
+                                    <div>
+                                        <span class="fs-12 text-muted">52 Completed</span>
+                                        <span class="fs-11 text-muted">(63%)</span>
+                                    </div>
+                                </div>
+                                <div class="progress mt-2 ht-3">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 63%"></div>
                                 </div>
                             </div>
                         </div>
@@ -173,14 +191,23 @@
                 <div class="col-xxl-3 col-md-6">
                     <div class="card stretch stretch-full">
                         <div class="card-body">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <a href="javascript:void(0);" class="fw-bold d-block">
-                                    <span class="d-block">Draft</span>
-                                    <span class="fs-20 fw-bold d-block">3/10</span>
-                                </a>
-                                <div class="badge bg-soft-danger text-danger">
-                                    <i class="feather-arrow-down fs-10 me-1"></i>
-                                    <span>12.68%</span>
+                            <a href="javascript:void(0);" class="fw-bold d-block">
+                                <span class="d-block">Finished</span>
+                                <span class="fs-24 fw-bolder d-block">25</span>
+                            </a>
+                            <div class="pt-4">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <a href="javascript:void(0);" class="fs-12 fw-medium text-muted">
+                                        <span>Conversion Rate</span>
+                                        <i class="feather-link-2 fs-10 ms-1"></i>
+                                    </a>
+                                    <div>
+                                        <span class="fs-12 text-muted">$2,254</span>
+                                        <span class="fs-11 text-muted">(46%)</span>
+                                    </div>
+                                </div>
+                                <div class="progress mt-2 ht-3">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 46%"></div>
                                 </div>
                             </div>
                         </div>
@@ -197,22 +224,22 @@
                 <div class="card stretch stretch-full">
                     <div class="card-body p-0">
                         <div class="table-responsive">
-                            <table class="table table-hover" id="paymentList">
+                            <table class="table table-hover" id="projectList">
                                 <thead>
                                     <tr>
                                         <th class="wd-30">
                                             <div class="btn-group mb-1">
                                                 <div class="custom-control custom-checkbox ms-1">
-                                                    <input type="checkbox" class="custom-control-input" id="checkAllPayment">
-                                                    <label class="custom-control-label" for="checkAllPayment"></label>
+                                                    <input type="checkbox" class="custom-control-input" id="checkAllProject">
+                                                    <label class="custom-control-label" for="checkAllProject"></label>
                                                 </div>
                                             </div>
                                         </th>
-                                        <th>Invoice</th>
-                                        <th>Client</th>
-                                        <th>Amount</th>
-                                        <th>Date</th>
-                                        <th>Transaction</th>
+                                        <th>Project Name</th>
+                                        <th>Customer</th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                        <th>Assigned</th>
                                         <th>Status</th>
                                         <th class="text-end">Actions</th>
                                     </tr>
@@ -227,27 +254,64 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td><a href="invoice-view.html" class="fw-bold">#321456</a></td>
+                                        <td class="project-name-td">
+                                            <div class="hstack gap-4">
+                                                <div class="avatar-image border-0">
+                                                    <img src="assets/images/brand/app-store.png" alt="" class="img-fluid">
+                                                </div>
+                                                <div>
+                                                    <a href="projects-view.html" class="text-truncate-1-line">Spark: This name could work well for a project related to innovation, creativity, or inspiration.</a>
+                                                    <p class="fs-12 text-muted mt-2 text-truncate-1-line project-list-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                                    <div class="project-list-action fs-12 d-flex align-items-center gap-3 mt-2">
+                                                        <a href="javascript:void(0);">Start</a>
+                                                        <span class="vr text-muted"></span>
+                                                        <a href="javascript:void(0);">Edit</a>
+                                                        <span class="vr text-muted"></span>
+                                                        <a href="javascript:void(0);" class="text-danger">Delete</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
                                         <td>
-                                            <a href="javascript:void(0)" class="hstack gap-3">
+                                            <a href="projects-view.html" class="hstack gap-3">
                                                 <div class="avatar-image avatar-md">
                                                     <img src="assets/images/avatar/1.png" alt="" class="img-fluid">
                                                 </div>
                                                 <div>
                                                     <span class="text-truncate-1-line">Alexandra Della</span>
-                                                    <small class="fs-12 fw-normal text-muted">alex.della@outlook.com</small>
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="fw-bold text-dark">$249.99 USD</td>
-                                        <td>2023-04-25, 03:42PM</td>
-                                        <td><a href="javascript:void(0);">#SDEG4589SE1E</a></td>
+                                        <td>2023-04-05</td>
+                                        <td>2023-04-10</td>
                                         <td>
-                                            <div class="badge bg-soft-success text-success">Complted</div>
+                                            <select class="form-select form-control" data-select2-selector="user">
+                                                <option value="alex@outlook.com" data-user="1">alex@outlook.com</option>
+                                                <option value="john.deo@outlook.com" data-user="2">john.deo@outlook.com</option>
+                                                <option value="green.cutte@outlook.com" data-user="3">green.cutte@outlook.com</option>
+                                                <option value="nancy.elliot@outlook.com" data-user="4">nancy.elliot@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="5">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="6">erna.serpa@outlook.com</option>
+                                                <option value="green.cutte@outlook.com" data-user="7">green.cutte@outlook.com</option>
+                                                <option value="nancy.elliot@outlook.com" data-user="8">nancy.elliot@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="9" selected>mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="10">erna.serpa@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="11">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="12">erna.serpa@outlook.com</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select class="form-control" data-select2-selector="status">
+                                                <option value="primary" data-bg="bg-primary" selected>In Projress</option>
+                                                <option value="warning" data-bg="bg-warning">Not Started</option>
+                                                <option value="success" data-bg="bg-success">On Hold</option>
+                                                <option value="danger" data-bg="bg-danger">Declined</option>
+                                                <option value="teal" data-bg="bg-teal">Finished</option>
+                                            </select>
                                         </td>
                                         <td>
                                             <div class="hstack gap-2 justify-content-end">
-                                                <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                <a href="projects-view.html" class="avatar-text avatar-md">
                                                     <i class="feather feather-eye"></i>
                                                 </a>
                                                 <div class="dropdown">
@@ -307,25 +371,62 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td><a href="invoice-view.html" class="fw-bold">#987456</a></td>
+                                        <td class="project-name-td">
+                                            <div class="hstack gap-4">
+                                                <div class="avatar-image border-0">
+                                                    <img src="assets/images/brand/dropbox.png" alt="" class="img-fluid">
+                                                </div>
+                                                <div>
+                                                    <a href="projects-view.html" class="text-truncate-1-line">Nexus: This name could work well for a project related to connectivity, bringing different people or ideas together, or solving complex problems.</a>
+                                                    <p class="fs-12 text-muted mt-2 text-truncate-1-line project-list-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                                    <div class="project-list-action fs-12 d-flex align-items-center gap-3 mt-2">
+                                                        <a href="javascript:void(0);">Start</a>
+                                                        <span class="vr text-muted"></span>
+                                                        <a href="javascript:void(0);">Edit</a>
+                                                        <span class="vr text-muted"></span>
+                                                        <a href="javascript:void(0);" class="text-danger">Delete</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
                                         <td>
-                                            <a href="javascript:void(0)" class="hstack gap-3">
+                                            <a href="projects-view.html" class="hstack gap-3">
                                                 <div class="avatar-image avatar-md bg-warning text-white">N</div>
                                                 <div>
                                                     <span class="text-truncate-1-line">Nancy Elliot</span>
-                                                    <small class="fs-12 fw-normal text-muted">nancy.elliot@outlook.com</small>
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="fw-bold text-dark">$120.50 USD</td>
-                                        <td>2023-05-20, 12:23PM</td>
-                                        <td><a href="javascript:void(0);">#SDEG4589SE1E</a></td>
+                                        <td>2023-04-02</td>
+                                        <td>2023-04-06</td>
                                         <td>
-                                            <div class="badge bg-soft-warning text-warning">Unpaid</div>
+                                            <select class="form-select form-control" data-select2-selector="user">
+                                                <option value="alex@outlook.com" data-user="1">alex@outlook.com</option>
+                                                <option value="john.deo@outlook.com" data-user="2">john.deo@outlook.com</option>
+                                                <option value="green.cutte@outlook.com" data-user="3">green.cutte@outlook.com</option>
+                                                <option value="nancy.elliot@outlook.com" data-user="4">nancy.elliot@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="5">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="6">erna.serpa@outlook.com</option>
+                                                <option value="green.cutte@outlook.com" data-user="7">green.cutte@outlook.com</option>
+                                                <option value="nancy.elliot@outlook.com" data-user="8" selected>nancy.elliot@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="9">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="10">erna.serpa@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="11">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="12">erna.serpa@outlook.com</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select class="form-control" data-select2-selector="status">
+                                                <option value="primary" data-bg="bg-primary">In Projress</option>
+                                                <option value="warning" data-bg="bg-warning" selected>Not Started</option>
+                                                <option value="success" data-bg="bg-success">On Hold</option>
+                                                <option value="danger" data-bg="bg-danger">Declined</option>
+                                                <option value="teal" data-bg="bg-teal">Finished</option>
+                                            </select>
                                         </td>
                                         <td>
                                             <div class="hstack gap-2 justify-content-end">
-                                                <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                <a href="projects-view.html" class="avatar-text avatar-md">
                                                     <i class="feather feather-eye"></i>
                                                 </a>
                                                 <div class="dropdown">
@@ -385,27 +486,64 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td><a href="invoice-view.html" class="fw-bold">#741258</a></td>
+                                        <td class="project-name-td">
+                                            <div class="hstack gap-4">
+                                                <div class="avatar-image border-0">
+                                                    <img src="assets/images/brand/facebook.png" alt="" class="img-fluid">
+                                                </div>
+                                                <div>
+                                                    <a href="projects-view.html" class="text-truncate-1-line">Velocity: This name could work well for a project related to speed, efficiency, or productivity.</a>
+                                                    <p class="fs-12 text-muted mt-2 text-truncate-1-line project-list-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                                    <div class="project-list-action fs-12 d-flex align-items-center gap-3 mt-2">
+                                                        <a href="javascript:void(0);">Start</a>
+                                                        <span class="vr text-muted"></span>
+                                                        <a href="javascript:void(0);">Edit</a>
+                                                        <span class="vr text-muted"></span>
+                                                        <a href="javascript:void(0);" class="text-danger">Delete</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
                                         <td>
-                                            <a href="javascript:void(0)" class="hstack gap-3">
+                                            <a href="projects-view.html" class="hstack gap-3">
                                                 <div class="avatar-image avatar-md">
                                                     <img src="assets/images/avatar/2.png" alt="" class="img-fluid">
                                                 </div>
                                                 <div>
                                                     <span class="text-truncate-1-line">Green Cute</span>
-                                                    <small class="fs-12 fw-normal text-muted">green.cute@outlook.com</small>
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="fw-bold text-dark">$300.00 USD</td>
-                                        <td>2023-01-02, 10:36AM</td>
-                                        <td><a href="javascript:void(0);">#SDEG4589SE1E</a></td>
+                                        <td>2023-04-12</td>
+                                        <td>2023-04-15</td>
                                         <td>
-                                            <div class="badge bg-soft-success text-success">Complted</div>
+                                            <select class="form-select form-control" data-select2-selector="user">
+                                                <option value="alex@outlook.com" data-user="1">alex@outlook.com</option>
+                                                <option value="john.deo@outlook.com" data-user="2">john.deo@outlook.com</option>
+                                                <option value="green.cutte@outlook.com" data-user="3">green.cutte@outlook.com</option>
+                                                <option value="nancy.elliot@outlook.com" data-user="4">nancy.elliot@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="5">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="6">erna.serpa@outlook.com</option>
+                                                <option value="green.cutte@outlook.com" data-user="7" selected>green.cutte@outlook.com</option>
+                                                <option value="nancy.elliot@outlook.com" data-user="8">nancy.elliot@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="9">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="10">erna.serpa@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="11">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="12">erna.serpa@outlook.com</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select class="form-control" data-select2-selector="status">
+                                                <option value="primary" data-bg="bg-primary">In Projress</option>
+                                                <option value="warning" data-bg="bg-warning">Not Started</option>
+                                                <option value="success" data-bg="bg-success" selected>On Hold</option>
+                                                <option value="danger" data-bg="bg-danger">Declined</option>
+                                                <option value="teal" data-bg="bg-teal">Finished</option>
+                                            </select>
                                         </td>
                                         <td>
                                             <div class="hstack gap-2 justify-content-end">
-                                                <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                <a href="projects-view.html" class="avatar-text avatar-md">
                                                     <i class="feather feather-eye"></i>
                                                 </a>
                                                 <div class="dropdown">
@@ -465,25 +603,62 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td><a href="invoice-view.html" class="fw-bold">#321456</a></td>
+                                        <td class="project-name-td">
+                                            <div class="hstack gap-4">
+                                                <div class="avatar-image border-0">
+                                                    <img src="assets/images/brand/figma.png" alt="" class="img-fluid">
+                                                </div>
+                                                <div>
+                                                    <a href="projects-view.html" class="text-truncate-1-line">Catalyst: This name could work well for a project related to driving change or transformation.</a>
+                                                    <p class="fs-12 text-muted mt-2 text-truncate-1-line project-list-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                                    <div class="project-list-action fs-12 d-flex align-items-center gap-3 mt-2">
+                                                        <a href="javascript:void(0);">Start</a>
+                                                        <span class="vr text-muted"></span>
+                                                        <a href="javascript:void(0);">Edit</a>
+                                                        <span class="vr text-muted"></span>
+                                                        <a href="javascript:void(0);" class="text-danger">Delete</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
                                         <td>
-                                            <a href="javascript:void(0)" class="hstack gap-3">
+                                            <a href="projects-view.html" class="hstack gap-3">
                                                 <div class="avatar-image avatar-md bg-teal text-white">H</div>
                                                 <div>
                                                     <span class="text-truncate-1-line">Henry Leach</span>
-                                                    <small class="fs-12 fw-normal text-muted">henry.leach@outlook.com</small>
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="fw-bold text-dark">$249.99 USD</td>
-                                        <td>2023-04-25, 04:22PM</td>
-                                        <td><a href="javascript:void(0);">#SDEG4589SE1E</a></td>
+                                        <td>2023-04-20</td>
+                                        <td>2023-04-25</td>
                                         <td>
-                                            <div class="badge bg-soft-success text-success">Complted</div>
+                                            <select class="form-select form-control" data-select2-selector="user">
+                                                <option value="alex@outlook.com" data-user="1">alex@outlook.com</option>
+                                                <option value="john.deo@outlook.com" data-user="2">john.deo@outlook.com</option>
+                                                <option value="green.cutte@outlook.com" data-user="3">green.cutte@outlook.com</option>
+                                                <option value="nancy.elliot@outlook.com" data-user="4">nancy.elliot@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="5">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="6" selected>erna.serpa@outlook.com</option>
+                                                <option value="green.cutte@outlook.com" data-user="7">green.cutte@outlook.com</option>
+                                                <option value="nancy.elliot@outlook.com" data-user="8">nancy.elliot@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="9">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="10">erna.serpa@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="11">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="12">erna.serpa@outlook.com</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select class="form-control" data-select2-selector="status">
+                                                <option value="primary" data-bg="bg-primary">In Projress</option>
+                                                <option value="warning" data-bg="bg-warning">Not Started</option>
+                                                <option value="success" data-bg="bg-success">On Hold</option>
+                                                <option value="danger" data-bg="bg-danger" selected>Declined</option>
+                                                <option value="teal" data-bg="bg-teal">Finished</option>
+                                            </select>
                                         </td>
                                         <td>
                                             <div class="hstack gap-2 justify-content-end">
-                                                <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                <a href="projects-view.html" class="avatar-text avatar-md">
                                                     <i class="feather feather-eye"></i>
                                                 </a>
                                                 <div class="dropdown">
@@ -543,27 +718,64 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td><a href="invoice-view.html" class="fw-bold">#357895</a></td>
+                                        <td class="project-name-td">
+                                            <div class="hstack gap-4">
+                                                <div class="avatar-image border-0">
+                                                    <img src="assets/images/brand/github.png" alt="" class="img-fluid">
+                                                </div>
+                                                <div>
+                                                    <a href="projects-view.html" class="text-truncate-1-line">Odyssey: This name could work well for a project related to exploration, adventure, or discovery.</a>
+                                                    <p class="fs-12 text-muted mt-2 text-truncate-1-line project-list-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                                    <div class="project-list-action fs-12 d-flex align-items-center gap-3 mt-2">
+                                                        <a href="javascript:void(0);">Start</a>
+                                                        <span class="vr text-muted"></span>
+                                                        <a href="javascript:void(0);">Edit</a>
+                                                        <span class="vr text-muted"></span>
+                                                        <a href="javascript:void(0);" class="text-danger">Delete</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
                                         <td>
-                                            <a href="javascript:void(0)" class="hstack gap-3">
+                                            <a href="projects-view.html" class="hstack gap-3">
                                                 <div class="avatar-image avatar-md">
                                                     <img src="assets/images/avatar/3.png" alt="" class="img-fluid">
                                                 </div>
                                                 <div>
                                                     <span class="text-truncate-1-line">Marianne Audrey</span>
-                                                    <small class="fs-12 fw-normal text-muted">marine.adrey@outlook.com</small>
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="fw-bold text-dark">$150.00 USD</td>
-                                        <td>2023-02-15, 05:23PM</td>
-                                        <td><a href="javascript:void(0);">#SDEG4589SE1E</a></td>
+                                        <td>2023-04-25</td>
+                                        <td>2023-04-30</td>
                                         <td>
-                                            <div class="badge bg-soft-success text-success">Complted</div>
+                                            <select class="form-select form-control" data-select2-selector="user">
+                                                <option value="alex@outlook.com" data-user="1">alex@outlook.com</option>
+                                                <option value="john.deo@outlook.com" data-user="2">john.deo@outlook.com</option>
+                                                <option value="green.cutte@outlook.com" data-user="3">green.cutte@outlook.com</option>
+                                                <option value="nancy.elliot@outlook.com" data-user="4">nancy.elliot@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="5">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="6" selected>erna.serpa@outlook.com</option>
+                                                <option value="green.cutte@outlook.com" data-user="7">green.cutte@outlook.com</option>
+                                                <option value="nancy.elliot@outlook.com" data-user="8">nancy.elliot@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="9">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="10">erna.serpa@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="11">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="12">erna.serpa@outlook.com</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select class="form-control" data-select2-selector="status">
+                                                <option value="primary" data-bg="bg-primary">In Projress</option>
+                                                <option value="warning" data-bg="bg-warning">Not Started</option>
+                                                <option value="success" data-bg="bg-success">On Hold</option>
+                                                <option value="danger" data-bg="bg-danger">Declined</option>
+                                                <option value="teal" data-bg="bg-teal" selected>Finished</option>
+                                            </select>
                                         </td>
                                         <td>
                                             <div class="hstack gap-2 justify-content-end">
-                                                <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                <a href="projects-view.html" class="avatar-text avatar-md">
                                                     <i class="feather feather-eye"></i>
                                                 </a>
                                                 <div class="dropdown">
@@ -623,27 +835,62 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td><a href="invoice-view.html" class="fw-bold">#321456</a></td>
-                                        <td>
-                                            <a href="javascript:void(0)" class="hstack gap-3">
-                                                <div class="avatar-image avatar-md">
-                                                    <img src="assets/images/avatar/1.png" alt="" class="img-fluid">
+                                        <td class="project-name-td">
+                                            <div class="hstack gap-4">
+                                                <div class="avatar-image border-0">
+                                                    <img src="assets/images/brand/gitlab.png" alt="" class="img-fluid">
                                                 </div>
                                                 <div>
-                                                    <span class="text-truncate-1-line">Alexandra Della</span>
-                                                    <small class="fs-12 fw-normal text-muted">alex.della@outlook.com</small>
+                                                    <a href="projects-view.html" class="text-truncate-1-line">Synergy: This name could work well for a project related to collaboration or teamwork, where multiple parts come together to create a greater whole.</a>
+                                                    <p class="fs-12 text-muted mt-2 text-truncate-1-line project-list-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                                    <div class="project-list-action fs-12 d-flex align-items-center gap-3 mt-2">
+                                                        <a href="javascript:void(0);">Start</a>
+                                                        <span class="vr text-muted"></span>
+                                                        <a href="javascript:void(0);">Edit</a>
+                                                        <span class="vr text-muted"></span>
+                                                        <a href="javascript:void(0);" class="text-danger">Delete</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="projects-view.html" class="hstack gap-3">
+                                                <div class="avatar-image avatar-md bg-warning text-white">N</div>
+                                                <div>
+                                                    <span class="text-truncate-1-line">Nancy Elliot</span>
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="fw-bold text-dark">$249.99 USD</td>
-                                        <td>2023-04-25, 11:43AM</td>
-                                        <td><a href="javascript:void(0);">#SDEG4589SE1E</a></td>
+                                        <td>2023-04-15</td>
+                                        <td>2023-04-20</td>
                                         <td>
-                                            <div class="badge bg-soft-success text-success">Complted</div>
+                                            <select class="form-select form-control" data-select2-selector="user">
+                                                <option value="alex@outlook.com" data-user="1">alex@outlook.com</option>
+                                                <option value="john.deo@outlook.com" data-user="2">john.deo@outlook.com</option>
+                                                <option value="green.cutte@outlook.com" data-user="3">green.cutte@outlook.com</option>
+                                                <option value="nancy.elliot@outlook.com" data-user="4">nancy.elliot@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="5" selected>mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="6">erna.serpa@outlook.com</option>
+                                                <option value="green.cutte@outlook.com" data-user="7">green.cutte@outlook.com</option>
+                                                <option value="nancy.elliot@outlook.com" data-user="8">nancy.elliot@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="9">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="10">erna.serpa@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="11">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="12">erna.serpa@outlook.com</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select class="form-control" data-select2-selector="status">
+                                                <option value="primary" data-bg="bg-primary" selected>In Projress</option>
+                                                <option value="warning" data-bg="bg-warning">Not Started</option>
+                                                <option value="success" data-bg="bg-success">On Hold</option>
+                                                <option value="danger" data-bg="bg-danger">Declined</option>
+                                                <option value="teal" data-bg="bg-teal">Finished</option>
+                                            </select>
                                         </td>
                                         <td>
                                             <div class="hstack gap-2 justify-content-end">
-                                                <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                <a href="projects-view.html" class="avatar-text avatar-md">
                                                     <i class="feather feather-eye"></i>
                                                 </a>
                                                 <div class="dropdown">
@@ -703,25 +950,64 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td><a href="invoice-view.html" class="fw-bold">#987456</a></td>
-                                        <td>
-                                            <a href="javascript:void(0)" class="hstack gap-3">
-                                                <div class="avatar-image avatar-md bg-warning text-white">N</div>
+                                        <td class="project-name-td">
+                                            <div class="hstack gap-4">
+                                                <div class="avatar-image border-0">
+                                                    <img src="assets/images/brand/gmail.png" alt="" class="img-fluid">
+                                                </div>
                                                 <div>
-                                                    <span class="text-truncate-1-line">Nancy Elliot</span>
-                                                    <small class="fs-12 fw-normal text-muted">nancy.elliot@outlook.com</small>
+                                                    <a href="projects-view.html" class="text-truncate-1-line">Zenith: This name could work well for a project related to achieving the highest point or peak of success.</a>
+                                                    <p class="fs-12 text-muted mt-2 text-truncate-1-line project-list-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                                    <div class="project-list-action fs-12 d-flex align-items-center gap-3 mt-2">
+                                                        <a href="javascript:void(0);">Start</a>
+                                                        <span class="vr text-muted"></span>
+                                                        <a href="javascript:void(0);">Edit</a>
+                                                        <span class="vr text-muted"></span>
+                                                        <a href="javascript:void(0);" class="text-danger">Delete</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="projects-view.html" class="hstack gap-3">
+                                                <div class="avatar-image avatar-md">
+                                                    <img src="assets/images/avatar/4.png" alt="" class="img-fluid">
+                                                </div>
+                                                <div>
+                                                    <span class="text-truncate-1-line">Cute Green</span>
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="fw-bold text-dark">$120.50 USD</td>
-                                        <td>2023-05-20, 03:46PM</td>
-                                        <td><a href="javascript:void(0);">#SDEG4589SE1E</a></td>
+                                        <td>2023-04-07</td>
+                                        <td>2023-04-12</td>
                                         <td>
-                                            <div class="badge bg-soft-warning text-warning">warning</div>
+                                            <select class="form-select form-control" data-select2-selector="user">
+                                                <option value="alex@outlook.com" data-user="1">alex@outlook.com</option>
+                                                <option value="john.deo@outlook.com" data-user="2">john.deo@outlook.com</option>
+                                                <option value="green.cutte@outlook.com" data-user="3">green.cutte@outlook.com</option>
+                                                <option value="nancy.elliot@outlook.com" data-user="4" selected>nancy.elliot@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="5">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="6">erna.serpa@outlook.com</option>
+                                                <option value="green.cutte@outlook.com" data-user="7">green.cutte@outlook.com</option>
+                                                <option value="nancy.elliot@outlook.com" data-user="8">nancy.elliot@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="9">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="10">erna.serpa@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="11">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="12">erna.serpa@outlook.com</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select class="form-control" data-select2-selector="status">
+                                                <option value="primary" data-bg="bg-primary">In Projress</option>
+                                                <option value="warning" data-bg="bg-warning" selected>Not Started</option>
+                                                <option value="success" data-bg="bg-success">On Hold</option>
+                                                <option value="danger" data-bg="bg-danger">Declined</option>
+                                                <option value="teal" data-bg="bg-teal">Finished</option>
+                                            </select>
                                         </td>
                                         <td>
                                             <div class="hstack gap-2 justify-content-end">
-                                                <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                <a href="projects-view.html" class="avatar-text avatar-md">
                                                     <i class="feather feather-eye"></i>
                                                 </a>
                                                 <div class="dropdown">
@@ -781,27 +1067,62 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td><a href="invoice-view.html" class="fw-bold">#741258</a></td>
-                                        <td>
-                                            <a href="javascript:void(0)" class="hstack gap-3">
-                                                <div class="avatar-image avatar-md">
-                                                    <img src="assets/images/avatar/2.png" alt="" class="img-fluid">
+                                        <td class="project-name-td">
+                                            <div class="hstack gap-4">
+                                                <div class="avatar-image border-0">
+                                                    <img src="assets/images/brand/google-drive.png" alt="" class="img-fluid">
                                                 </div>
                                                 <div>
-                                                    <span class="text-truncate-1-line">Green Cute</span>
-                                                    <small class="fs-12 fw-normal text-muted">green.cute@outlook.com</small>
+                                                    <a href="projects-view.html" class="text-truncate-1-line">Zenith: This name could work well for a project related to achieving the highest point or peak of success.</a>
+                                                    <p class="fs-12 text-muted mt-2 text-truncate-1-line project-list-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                                    <div class="project-list-action fs-12 d-flex align-items-center gap-3 mt-2">
+                                                        <a href="javascript:void(0);">Start</a>
+                                                        <span class="vr text-muted"></span>
+                                                        <a href="javascript:void(0);">Edit</a>
+                                                        <span class="vr text-muted"></span>
+                                                        <a href="javascript:void(0);" class="text-danger">Delete</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="projects-view.html" class="hstack gap-3">
+                                                <div class="avatar-image avatar-md bg-success text-white">H</div>
+                                                <div>
+                                                    <span class="text-truncate-1-line">Leach Henry</span>
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="fw-bold text-dark">$300.00 USD</td>
-                                        <td>2023-01-02, 02:35PM</td>
-                                        <td><a href="javascript:void(0);">#SDEG4589SE1E</a></td>
+                                        <td>2023-04-06</td>
+                                        <td>2023-04-08</td>
                                         <td>
-                                            <div class="badge bg-soft-success text-success">Complted</div>
+                                            <select class="form-select form-control" data-select2-selector="user">
+                                                <option value="alex@outlook.com" data-user="1">alex@outlook.com</option>
+                                                <option value="john.deo@outlook.com" data-user="2">john.deo@outlook.com</option>
+                                                <option value="green.cutte@outlook.com" data-user="3" selected>green.cutte@outlook.com</option>
+                                                <option value="nancy.elliot@outlook.com" data-user="4">nancy.elliot@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="5">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="6">erna.serpa@outlook.com</option>
+                                                <option value="green.cutte@outlook.com" data-user="7">green.cutte@outlook.com</option>
+                                                <option value="nancy.elliot@outlook.com" data-user="8">nancy.elliot@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="9">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="10">erna.serpa@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="11">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="12">erna.serpa@outlook.com</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select class="form-control" data-select2-selector="status">
+                                                <option value="primary" data-bg="bg-primary">In Projress</option>
+                                                <option value="warning" data-bg="bg-warning">Not Started</option>
+                                                <option value="success" data-bg="bg-success" selected>On Hold</option>
+                                                <option value="danger" data-bg="bg-danger">Declined</option>
+                                                <option value="teal" data-bg="bg-teal">Finished</option>
+                                            </select>
                                         </td>
                                         <td>
                                             <div class="hstack gap-2 justify-content-end">
-                                                <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                <a href="projects-view.html" class="avatar-text avatar-md">
                                                     <i class="feather feather-eye"></i>
                                                 </a>
                                                 <div class="dropdown">
@@ -861,25 +1182,64 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td><a href="invoice-view.html" class="fw-bold">#321456</a></td>
-                                        <td>
-                                            <a href="javascript:void(0)" class="hstack gap-3">
-                                                <div class="avatar-image avatar-md bg-teal text-white">H</div>
+                                        <td class="project-name-td">
+                                            <div class="hstack gap-4">
+                                                <div class="avatar-image border-0">
+                                                    <img src="assets/images/brand/instagram.png" alt="" class="img-fluid">
+                                                </div>
                                                 <div>
-                                                    <span class="text-truncate-1-line">Henry Leach</span>
-                                                    <small class="fs-12 fw-normal text-muted">henry.leach@outlook.com</small>
+                                                    <a href="projects-view.html" class="text-truncate-1-line">Momentum: This name could work well for a project related to maintaining forward motion and progress.</a>
+                                                    <p class="fs-12 text-muted mt-2 text-truncate-1-line project-list-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                                    <div class="project-list-action fs-12 d-flex align-items-center gap-3 mt-2">
+                                                        <a href="javascript:void(0);">Start</a>
+                                                        <span class="vr text-muted"></span>
+                                                        <a href="javascript:void(0);">Edit</a>
+                                                        <span class="vr text-muted"></span>
+                                                        <a href="javascript:void(0);" class="text-danger">Delete</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="projects-view.html" class="hstack gap-3">
+                                                <div class="avatar-image avatar-md">
+                                                    <img src="assets/images/avatar/5.png" alt="" class="img-fluid">
+                                                </div>
+                                                <div>
+                                                    <span class="text-truncate-1-line">Audrey Marianne</span>
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="fw-bold text-dark">$249.99 USD</td>
-                                        <td>2023-04-25,06:35PM</td>
-                                        <td><a href="javascript:void(0);">#SDEG4589SE1E</a></td>
+                                        <td>2023-04-15</td>
+                                        <td>2023-04-25</td>
                                         <td>
-                                            <div class="badge bg-soft-danger text-danger">Declined</div>
+                                            <select class="form-select form-control" data-select2-selector="user">
+                                                <option value="alex@outlook.com" data-user="1">alex@outlook.com</option>
+                                                <option value="john.deo@outlook.com" data-user="2" selected>john.deo@outlook.com</option>
+                                                <option value="green.cutte@outlook.com" data-user="3">green.cutte@outlook.com</option>
+                                                <option value="nancy.elliot@outlook.com" data-user="4">nancy.elliot@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="5">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="6">erna.serpa@outlook.com</option>
+                                                <option value="green.cutte@outlook.com" data-user="7">green.cutte@outlook.com</option>
+                                                <option value="nancy.elliot@outlook.com" data-user="8">nancy.elliot@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="9">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="10">erna.serpa@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="11">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="12">erna.serpa@outlook.com</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select class="form-control" data-select2-selector="status">
+                                                <option value="primary" data-bg="bg-primary">In Projress</option>
+                                                <option value="warning" data-bg="bg-warning">Not Started</option>
+                                                <option value="success" data-bg="bg-success">On Hold</option>
+                                                <option value="danger" data-bg="bg-danger" selected>Declined</option>
+                                                <option value="teal" data-bg="bg-teal">Finished</option>
+                                            </select>
                                         </td>
                                         <td>
                                             <div class="hstack gap-2 justify-content-end">
-                                                <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                <a href="projects-view.html" class="avatar-text avatar-md">
                                                     <i class="feather feather-eye"></i>
                                                 </a>
                                                 <div class="dropdown">
@@ -939,27 +1299,62 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td><a href="invoice-view.html" class="fw-bold">#357895</a></td>
-                                        <td>
-                                            <a href="javascript:void(0)" class="hstack gap-3">
-                                                <div class="avatar-image avatar-md">
-                                                    <img src="assets/images/avatar/3.png" alt="" class="img-fluid">
+                                        <td class="project-name-td">
+                                            <div class="hstack gap-4">
+                                                <div class="avatar-image border-0">
+                                                    <img src="assets/images/brand/paypal.png" alt="" class="img-fluid">
                                                 </div>
                                                 <div>
-                                                    <span class="text-truncate-1-line">Marianne Audrey</span>
-                                                    <small class="fs-12 fw-normal text-muted">marianne.audrey@outlook.com</small>
+                                                    <a href="projects-view.html" class="text-truncate-1-line">Horizon: This name could work well for a project related to exploring new frontiers or expanding into new areas.</a>
+                                                    <p class="fs-12 text-muted mt-2 text-truncate-1-line project-list-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                                    <div class="project-list-action fs-12 d-flex align-items-center gap-3 mt-2">
+                                                        <a href="javascript:void(0);">Start</a>
+                                                        <span class="vr text-muted"></span>
+                                                        <a href="javascript:void(0);">Edit</a>
+                                                        <span class="vr text-muted"></span>
+                                                        <a href="javascript:void(0);" class="text-danger">Delete</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="projects-view.html" class="hstack gap-3">
+                                                <div class="avatar-image avatar-md bg-primary text-white">E</div>
+                                                <div>
+                                                    <span class="text-truncate-1-line">Elliot Nancy</span>
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="fw-bold text-dark">$150.00 USD</td>
-                                        <td>2023-02-15, 08:36PM</td>
-                                        <td><a href="javascript:void(0);">#SDEG4589SE1E</a></td>
+                                        <td>2023-05-01</td>
+                                        <td>2023-05-03</td>
                                         <td>
-                                            <div class="badge bg-soft-success text-success">Complted</div>
+                                            <select class="form-select form-control" data-select2-selector="user">
+                                                <option value="alex@outlook.com" data-user="1" selected>alex@outlook.com</option>
+                                                <option value="john.deo@outlook.com" data-user="2">john.deo@outlook.com</option>
+                                                <option value="green.cutte@outlook.com" data-user="3">green.cutte@outlook.com</option>
+                                                <option value="nancy.elliot@outlook.com" data-user="4">nancy.elliot@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="5">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="6">erna.serpa@outlook.com</option>
+                                                <option value="green.cutte@outlook.com" data-user="7">green.cutte@outlook.com</option>
+                                                <option value="nancy.elliot@outlook.com" data-user="8">nancy.elliot@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="9">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="10">erna.serpa@outlook.com</option>
+                                                <option value="mar.audrey@gmail.com" data-user="11">mar.audrey@gmail.com</option>
+                                                <option value="erna.serpa@outlook.com" data-user="12">erna.serpa@outlook.com</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select class="form-control" data-select2-selector="status">
+                                                <option value="primary" data-bg="bg-primary">In Projress</option>
+                                                <option value="warning" data-bg="bg-warning">Not Started</option>
+                                                <option value="success" data-bg="bg-success">On Hold</option>
+                                                <option value="danger" data-bg="bg-danger">Declined</option>
+                                                <option value="teal" data-bg="bg-teal" selected>Finished</option>
+                                            </select>
                                         </td>
                                         <td>
                                             <div class="hstack gap-2 justify-content-end">
-                                                <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                <a href="projects-view.html" class="avatar-text avatar-md">
                                                     <i class="feather feather-eye"></i>
                                                 </a>
                                                 <div class="dropdown">
