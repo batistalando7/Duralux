@@ -146,7 +146,7 @@ Route::get('/Applications/appsCalendar', function () {
 });
 
 /*-------------------------------------------------------
-                    aplications routes
+                    customers routes
 -------------------------------------------------------*/
 
 Route::get('/customers', function(){
@@ -164,6 +164,27 @@ Route::get('/customers/customersCreate', function(){
     return view('customers.customersCreate.index');
 
 });
+
+/*-------------------------------------------------------
+                    payment routes
+-------------------------------------------------------*/
+
+Route::get('/payment', function(){
+
+    return view('payment.payment.index');
+
+});
+Route::get('/payment/invoiceView', function(){
+
+    return view('payment.invoiceView.index');
+
+});
+Route::get('/payment/invoiceCreate', function(){
+
+    return view('payment.invoiceCreate.index');
+
+});
+
 
 /*-------------------------------------------------------
                     widgets routes
@@ -184,3 +205,4 @@ Route::get('/widgets/miscellaneous', function () {
 Route::get('/widgets/statistics', function () {
     return view('widgets.statistics.index');
 });
+

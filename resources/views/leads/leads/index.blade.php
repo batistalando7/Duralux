@@ -1,17 +1,16 @@
-@extends('payment.payment.layout.principal')
-@section('title', 'Duralux || Payment')
-@section('content-payment')
-
+@extends('leads.leads.layout.principal')
+@section('title', 'leads')
+@section('content-leads')
 <div class="nxl-content">
     <!-- [ page-header ] start -->
     <div class="page-header">
         <div class="page-header-left d-flex align-items-center">
             <div class="page-header-title">
-                <h5 class="m-b-10">Payment</h5>
+                <h5 class="m-b-10">Leads</h5>
             </div>
             <ul class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item">Payment</li>
+                <li class="breadcrumb-item">Leads</li>
             </ul>
         </div>
         <div class="page-header-right ms-auto">
@@ -32,45 +31,41 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
                             <a href="javascript:void(0);" class="dropdown-item">
-                                <i class="feather-eye me-3"></i>
-                                <span>All</span>
+                                <span class="wd-7 ht-7 bg-primary rounded-circle d-inline-block me-3"></span>
+                                <span>New</span>
                             </a>
                             <a href="javascript:void(0);" class="dropdown-item">
-                                <i class="feather-send me-3"></i>
-                                <span>Sent</span>
+                                <span class="wd-7 ht-7 bg-warning rounded-circle d-inline-block me-3"></span>
+                                <span>Working</span>
                             </a>
                             <a href="javascript:void(0);" class="dropdown-item">
-                                <i class="feather-book-open me-3"></i>
-                                <span>Open</span>
+                                <span class="wd-7 ht-7 bg-success rounded-circle d-inline-block me-3"></span>
+                                <span>Qualified</span>
                             </a>
                             <a href="javascript:void(0);" class="dropdown-item">
-                                <i class="feather-archive me-3"></i>
-                                <span>Draft</span>
-                            </a>
-                            <a href="javascript:void(0);" class="dropdown-item">
-                                <i class="feather-bell me-3"></i>
-                                <span>Revised</span>
-                            </a>
-                            <a href="javascript:void(0);" class="dropdown-item">
-                                <i class="feather-shield-off me-3"></i>
+                                <span class="wd-7 ht-7 bg-danger rounded-circle d-inline-block me-3"></span>
                                 <span>Declined</span>
                             </a>
                             <a href="javascript:void(0);" class="dropdown-item">
-                                <i class="feather-check me-3"></i>
-                                <span>Accepted</span>
+                                <span class="wd-7 ht-7 bg-teal rounded-circle d-inline-block me-3"></span>
+                                <span>Customer</span>
+                            </a>
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <span class="wd-7 ht-7 bg-indigo rounded-circle d-inline-block me-3"></span>
+                                <span>Contacted</span>
                             </a>
                             <div class="dropdown-divider"></div>
                             <a href="javascript:void(0);" class="dropdown-item">
-                                <i class="feather-briefcase me-3"></i>
-                                <span>Leads</span>
+                                <span class="wd-7 ht-7 bg-warning rounded-circle d-inline-block me-3"></span>
+                                <span>Pending</span>
                             </a>
                             <a href="javascript:void(0);" class="dropdown-item">
-                                <i class="feather-wifi-off me-3"></i>
-                                <span>Expired</span>
+                                <span class="wd-7 ht-7 bg-success rounded-circle d-inline-block me-3"></span>
+                                <span>Approved</span>
                             </a>
                             <a href="javascript:void(0);" class="dropdown-item">
-                                <i class="feather-users me-3"></i>
-                                <span>Customers</span>
+                                <span class="wd-7 ht-7 bg-teal rounded-circle d-inline-block me-3"></span>
+                                <span>In Progress</span>
                             </a>
                         </div>
                     </div>
@@ -106,9 +101,9 @@
                             </a>
                         </div>
                     </div>
-                    <a href="invoice-create.html" class="btn btn-primary">
+                    <a href="leads-create.html" class="btn btn-primary">
                         <i class="feather-plus me-2"></i>
-                        <span>Create Invoice</span>
+                        <span>Create Lead</span>
                     </a>
                 </div>
             </div>
@@ -126,10 +121,15 @@
                     <div class="card stretch stretch-full">
                         <div class="card-body">
                             <div class="d-flex align-items-center justify-content-between">
-                                <a href="javascript:void(0);" class="fw-bold d-block">
-                                    <span class="d-block">Paid</span>
-                                    <span class="fs-20 fw-bold d-block">78/100</span>
-                                </a>
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="avatar-text avatar-xl rounded">
+                                        <i class="feather-users"></i>
+                                    </div>
+                                    <a href="javascript:void(0);" class="fw-bold d-block">
+                                        <span class="d-block">Total Leads</span>
+                                        <span class="fs-24 fw-bolder d-block">26,595</span>
+                                    </a>
+                                </div>
                                 <div class="badge bg-soft-success text-success">
                                     <i class="feather-arrow-up fs-10 me-1"></i>
                                     <span>36.85%</span>
@@ -142,13 +142,18 @@
                     <div class="card stretch stretch-full">
                         <div class="card-body">
                             <div class="d-flex align-items-center justify-content-between">
-                                <a href="javascript:void(0);" class="fw-bold d-block">
-                                    <span class="d-block">Unpaid</span>
-                                    <span class="fs-20 fw-bold d-block">38/50</span>
-                                </a>
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="avatar-text avatar-xl rounded">
+                                        <i class="feather-user-check"></i>
+                                    </div>
+                                    <a href="javascript:void(0);" class="fw-bold d-block">
+                                        <span class="d-block">Active Leads</span>
+                                        <span class="fs-24 fw-bolder d-block">2,245</span>
+                                    </a>
+                                </div>
                                 <div class="badge bg-soft-danger text-danger">
                                     <i class="feather-arrow-down fs-10 me-1"></i>
-                                    <span>23.45%</span>
+                                    <span>24.56%</span>
                                 </div>
                             </div>
                         </div>
@@ -158,13 +163,18 @@
                     <div class="card stretch stretch-full">
                         <div class="card-body">
                             <div class="d-flex align-items-center justify-content-between">
-                                <a href="javascript:void(0);" class="fw-bold d-block">
-                                    <span class="d-block">Overdue</span>
-                                    <span class="fs-20 fw-bold d-block">15/30</span>
-                                </a>
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="avatar-text avatar-xl rounded">
+                                        <i class="feather-user-plus"></i>
+                                    </div>
+                                    <a href="javascript:void(0);" class="fw-bold d-block">
+                                        <span class="d-block">New Leads</span>
+                                        <span class="fs-24 fw-bolder d-block">1,254</span>
+                                    </a>
+                                </div>
                                 <div class="badge bg-soft-success text-success">
                                     <i class="feather-arrow-up fs-10 me-1"></i>
-                                    <span>25.44%</span>
+                                    <span>33.29%</span>
                                 </div>
                             </div>
                         </div>
@@ -174,13 +184,18 @@
                     <div class="card stretch stretch-full">
                         <div class="card-body">
                             <div class="d-flex align-items-center justify-content-between">
-                                <a href="javascript:void(0);" class="fw-bold d-block">
-                                    <span class="d-block">Draft</span>
-                                    <span class="fs-20 fw-bold d-block">3/10</span>
-                                </a>
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="avatar-text avatar-xl rounded">
+                                        <i class="feather-user-minus"></i>
+                                    </div>
+                                    <a href="javascript:void(0);" class="fw-bold d-block">
+                                        <span class="d-block">Inactive Leads</span>
+                                        <span class="fs-24 fw-bolder d-block">4,586</span>
+                                    </a>
+                                </div>
                                 <div class="badge bg-soft-danger text-danger">
                                     <i class="feather-arrow-down fs-10 me-1"></i>
-                                    <span>12.68%</span>
+                                    <span>42.47%</span>
                                 </div>
                             </div>
                         </div>
@@ -197,22 +212,22 @@
                 <div class="card stretch stretch-full">
                     <div class="card-body p-0">
                         <div class="table-responsive">
-                            <table class="table table-hover" id="paymentList">
+                            <table class="table table-hover" id="leadList">
                                 <thead>
                                     <tr>
                                         <th class="wd-30">
                                             <div class="btn-group mb-1">
                                                 <div class="custom-control custom-checkbox ms-1">
-                                                    <input type="checkbox" class="custom-control-input" id="checkAllPayment">
-                                                    <label class="custom-control-label" for="checkAllPayment"></label>
+                                                    <input type="checkbox" class="custom-control-input" id="checkAllLead">
+                                                    <label class="custom-control-label" for="checkAllLead"></label>
                                                 </div>
                                             </div>
                                         </th>
-                                        <th>Invoice</th>
-                                        <th>Client</th>
-                                        <th>Amount</th>
+                                        <th>Lead</th>
+                                        <th>Email</th>
+                                        <th>Source</th>
+                                        <th>Phone</th>
                                         <th>Date</th>
-                                        <th>Transaction</th>
                                         <th>Status</th>
                                         <th class="text-end">Actions</th>
                                     </tr>
@@ -227,27 +242,40 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td><a href="invoice-view.html" class="fw-bold">#321456</a></td>
                                         <td>
-                                            <a href="javascript:void(0)" class="hstack gap-3">
+                                            <a href="leads-view.html" class="hstack gap-3">
                                                 <div class="avatar-image avatar-md">
                                                     <img src="assets/images/avatar/1.png" alt="" class="img-fluid">
                                                 </div>
                                                 <div>
                                                     <span class="text-truncate-1-line">Alexandra Della</span>
-                                                    <small class="fs-12 fw-normal text-muted">alex.della@outlook.com</small>
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="fw-bold text-dark">$249.99 USD</td>
-                                        <td>2023-04-25, 03:42PM</td>
-                                        <td><a href="javascript:void(0);">#SDEG4589SE1E</a></td>
+                                        <td><a href="apps-mail.html">alex.della@outlook.com</a></td>
                                         <td>
-                                            <div class="badge bg-soft-success text-success">Complted</div>
+                                            <div class="hstack gap-2">
+                                                <div class="avatar-text avatar-sm">
+                                                    <i class="feather-facebook"></i>
+                                                </div>
+                                                <a href="javascript:void(0);">Facebook</a>
+                                            </div>
+                                        </td>
+                                        <td><a href="tel:">(375) 9632 548</a></td>
+                                        <td>2023-04-05, 00:05PM</td>
+                                        <td>
+                                            <select class="form-control" data-select2-selector="status">
+                                                <option value="primary" data-bg="bg-primary">New</option>
+                                                <option value="warning" data-bg="bg-warning">Working</option>
+                                                <option value="success" data-bg="bg-success">Qualified</option>
+                                                <option value="danger" data-bg="bg-danger">Declined</option>
+                                                <option value="teal" data-bg="bg-teal">Customer</option>
+                                                <option value="indigo" data-bg="bg-indigo" selected>Contacted</option>
+                                            </select>
                                         </td>
                                         <td>
                                             <div class="hstack gap-2 justify-content-end">
-                                                <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                <a href="leads-view.html" class="avatar-text avatar-md">
                                                     <i class="feather feather-eye"></i>
                                                 </a>
                                                 <div class="dropdown">
@@ -307,25 +335,38 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td><a href="invoice-view.html" class="fw-bold">#987456</a></td>
                                         <td>
-                                            <a href="javascript:void(0)" class="hstack gap-3">
+                                            <a href="leads-view.html" class="hstack gap-3">
                                                 <div class="avatar-image avatar-md bg-warning text-white">N</div>
                                                 <div>
                                                     <span class="text-truncate-1-line">Nancy Elliot</span>
-                                                    <small class="fs-12 fw-normal text-muted">nancy.elliot@outlook.com</small>
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="fw-bold text-dark">$120.50 USD</td>
-                                        <td>2023-05-20, 12:23PM</td>
-                                        <td><a href="javascript:void(0);">#SDEG4589SE1E</a></td>
+                                        <td><a href="apps-mail.html">nancy.elliot@outlook.com</a></td>
                                         <td>
-                                            <div class="badge bg-soft-warning text-warning">Unpaid</div>
+                                            <div class="hstack gap-2">
+                                                <div class="avatar-text avatar-sm">
+                                                    <i class="feather-facebook"></i>
+                                                </div>
+                                                <a href="javascript:void(0);">Facebook</a>
+                                            </div>
+                                        </td>
+                                        <td><a href="tel:"> (375) 8523 456</a></td>
+                                        <td>2023-04-06, 02:52PM</td>
+                                        <td>
+                                            <select class="form-control" data-select2-selector="status">
+                                                <option value="primary" data-bg="bg-primary">New</option>
+                                                <option value="warning" data-bg="bg-warning">Working</option>
+                                                <option value="success" data-bg="bg-success">Qualified</option>
+                                                <option value="danger" data-bg="bg-danger">Declined</option>
+                                                <option value="teal" data-bg="bg-teal" selected>Customer</option>
+                                                <option value="indigo" data-bg="bg-indigo">Contacted</option>
+                                            </select>
                                         </td>
                                         <td>
                                             <div class="hstack gap-2 justify-content-end">
-                                                <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                <a href="leads-view.html" class="avatar-text avatar-md">
                                                     <i class="feather feather-eye"></i>
                                                 </a>
                                                 <div class="dropdown">
@@ -385,27 +426,40 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td><a href="invoice-view.html" class="fw-bold">#741258</a></td>
                                         <td>
-                                            <a href="javascript:void(0)" class="hstack gap-3">
+                                            <a href="leads-view.html" class="hstack gap-3">
                                                 <div class="avatar-image avatar-md">
                                                     <img src="assets/images/avatar/2.png" alt="" class="img-fluid">
                                                 </div>
                                                 <div>
                                                     <span class="text-truncate-1-line">Green Cute</span>
-                                                    <small class="fs-12 fw-normal text-muted">green.cute@outlook.com</small>
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="fw-bold text-dark">$300.00 USD</td>
-                                        <td>2023-01-02, 10:36AM</td>
-                                        <td><a href="javascript:void(0);">#SDEG4589SE1E</a></td>
+                                        <td><a href="apps-mail.html">green.cute@outlook.com</a></td>
                                         <td>
-                                            <div class="badge bg-soft-success text-success">Complted</div>
+                                            <div class="hstack gap-2">
+                                                <div class="avatar-text avatar-sm">
+                                                    <i class="feather-twitter"></i>
+                                                </div>
+                                                <a href="javascript:void(0);">Twitter</a>
+                                            </div>
+                                        </td>
+                                        <td><a href="tel:"> (845) 9632 874</a></td>
+                                        <td>2023-04-08, 08:34PM</td>
+                                        <td>
+                                            <select class="form-control" data-select2-selector="status">
+                                                <option value="primary" data-bg="bg-primary">New</option>
+                                                <option value="warning" data-bg="bg-warning">Working</option>
+                                                <option value="success" data-bg="bg-success">Qualified</option>
+                                                <option value="danger" data-bg="bg-danger" selected>Declined</option>
+                                                <option value="teal" data-bg="bg-teal">Customer</option>
+                                                <option value="indigo" data-bg="bg-indigo">Contacted</option>
+                                            </select>
                                         </td>
                                         <td>
                                             <div class="hstack gap-2 justify-content-end">
-                                                <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                <a href="leads-view.html" class="avatar-text avatar-md">
                                                     <i class="feather feather-eye"></i>
                                                 </a>
                                                 <div class="dropdown">
@@ -465,25 +519,38 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td><a href="invoice-view.html" class="fw-bold">#321456</a></td>
                                         <td>
-                                            <a href="javascript:void(0)" class="hstack gap-3">
+                                            <a href="leads-view.html" class="hstack gap-3">
                                                 <div class="avatar-image avatar-md bg-teal text-white">H</div>
                                                 <div>
                                                     <span class="text-truncate-1-line">Henry Leach</span>
-                                                    <small class="fs-12 fw-normal text-muted">henry.leach@outlook.com</small>
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="fw-bold text-dark">$249.99 USD</td>
-                                        <td>2023-04-25, 04:22PM</td>
-                                        <td><a href="javascript:void(0);">#SDEG4589SE1E</a></td>
+                                        <td><a href="apps-mail.html">henry.leach@outlook.com</a></td>
                                         <td>
-                                            <div class="badge bg-soft-success text-success">Complted</div>
+                                            <div class="hstack gap-2">
+                                                <div class="avatar-text avatar-sm">
+                                                    <i class="feather-instagram"></i>
+                                                </div>
+                                                <a href="javascript:void(0);">Instagram</a>
+                                            </div>
+                                        </td>
+                                        <td><a href="tel:"> (258) 9514 657</a></td>
+                                        <td>2023-04-10, 05:25PM</td>
+                                        <td>
+                                            <select class="form-control" data-select2-selector="status">
+                                                <option value="primary" data-bg="bg-primary">New</option>
+                                                <option value="warning" data-bg="bg-warning">Working</option>
+                                                <option value="success" data-bg="bg-success" selected>Qualified</option>
+                                                <option value="danger" data-bg="bg-danger">Declined</option>
+                                                <option value="teal" data-bg="bg-teal">Customer</option>
+                                                <option value="indigo" data-bg="bg-indigo">Contacted</option>
+                                            </select>
                                         </td>
                                         <td>
                                             <div class="hstack gap-2 justify-content-end">
-                                                <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                <a href="leads-view.html" class="avatar-text avatar-md">
                                                     <i class="feather feather-eye"></i>
                                                 </a>
                                                 <div class="dropdown">
@@ -543,27 +610,40 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td><a href="invoice-view.html" class="fw-bold">#357895</a></td>
                                         <td>
-                                            <a href="javascript:void(0)" class="hstack gap-3">
+                                            <a href="leads-view.html" class="hstack gap-3">
                                                 <div class="avatar-image avatar-md">
                                                     <img src="assets/images/avatar/3.png" alt="" class="img-fluid">
                                                 </div>
                                                 <div>
                                                     <span class="text-truncate-1-line">Marianne Audrey</span>
-                                                    <small class="fs-12 fw-normal text-muted">marine.adrey@outlook.com</small>
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="fw-bold text-dark">$150.00 USD</td>
-                                        <td>2023-02-15, 05:23PM</td>
-                                        <td><a href="javascript:void(0);">#SDEG4589SE1E</a></td>
+                                        <td><a href="apps-mail.html">marine.adrey@outlook.com</a></td>
                                         <td>
-                                            <div class="badge bg-soft-success text-success">Complted</div>
+                                            <div class="hstack gap-2">
+                                                <div class="avatar-text avatar-sm">
+                                                    <i class="feather-linkedin"></i>
+                                                </div>
+                                                <a href="javascript:void(0);">Linkedin</a>
+                                            </div>
+                                        </td>
+                                        <td><a href="tel:"> (456) 6547 524</a></td>
+                                        <td>2023-04-12, 12:02PM</td>
+                                        <td>
+                                            <select class="form-control" data-select2-selector="status">
+                                                <option value="primary" data-bg="bg-primary">New</option>
+                                                <option value="warning" data-bg="bg-warning" selected>Working</option>
+                                                <option value="success" data-bg="bg-success">Qualified</option>
+                                                <option value="danger" data-bg="bg-danger">Declined</option>
+                                                <option value="teal" data-bg="bg-teal">Customer</option>
+                                                <option value="indigo" data-bg="bg-indigo">Contacted</option>
+                                            </select>
                                         </td>
                                         <td>
                                             <div class="hstack gap-2 justify-content-end">
-                                                <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                <a href="leads-view.html" class="avatar-text avatar-md">
                                                     <i class="feather feather-eye"></i>
                                                 </a>
                                                 <div class="dropdown">
@@ -623,27 +703,38 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td><a href="invoice-view.html" class="fw-bold">#321456</a></td>
                                         <td>
-                                            <a href="javascript:void(0)" class="hstack gap-3">
-                                                <div class="avatar-image avatar-md">
-                                                    <img src="assets/images/avatar/1.png" alt="" class="img-fluid">
-                                                </div>
+                                            <a href="leads-view.html" class="hstack gap-3">
+                                                <div class="avatar-image avatar-md bg-warning text-white">N</div>
                                                 <div>
-                                                    <span class="text-truncate-1-line">Alexandra Della</span>
-                                                    <small class="fs-12 fw-normal text-muted">alex.della@outlook.com</small>
+                                                    <span class="text-truncate-1-line">Nancy Elliot</span>
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="fw-bold text-dark">$249.99 USD</td>
-                                        <td>2023-04-25, 11:43AM</td>
-                                        <td><a href="javascript:void(0);">#SDEG4589SE1E</a></td>
+                                        <td><a href="apps-mail.html">nancy.elliot@outlook.com</a></td>
                                         <td>
-                                            <div class="badge bg-soft-success text-success">Complted</div>
+                                            <div class="hstack gap-2">
+                                                <div class="avatar-text avatar-sm">
+                                                    <i class="feather-instagram"></i>
+                                                </div>
+                                                <a href="javascript:void(0);">Instagram</a>
+                                            </div>
+                                        </td>
+                                        <td><a href="tel:"> (375) 8523 456</a></td>
+                                        <td>2023-04-15, 02:40PM</td>
+                                        <td>
+                                            <select class="form-control" data-select2-selector="status">
+                                                <option value="primary" data-bg="bg-primary" selected>New</option>
+                                                <option value="warning" data-bg="bg-warning">Working</option>
+                                                <option value="success" data-bg="bg-success">Qualified</option>
+                                                <option value="danger" data-bg="bg-danger">Declined</option>
+                                                <option value="teal" data-bg="bg-teal">Customer</option>
+                                                <option value="indigo" data-bg="bg-indigo">Contacted</option>
+                                            </select>
                                         </td>
                                         <td>
                                             <div class="hstack gap-2 justify-content-end">
-                                                <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                <a href="leads-view.html" class="avatar-text avatar-md">
                                                     <i class="feather feather-eye"></i>
                                                 </a>
                                                 <div class="dropdown">
@@ -703,25 +794,40 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td><a href="invoice-view.html" class="fw-bold">#987456</a></td>
                                         <td>
-                                            <a href="javascript:void(0)" class="hstack gap-3">
-                                                <div class="avatar-image avatar-md bg-warning text-white">N</div>
+                                            <a href="leads-view.html" class="hstack gap-3">
+                                                <div class="avatar-image avatar-md">
+                                                    <img src="assets/images/avatar/4.png" alt="" class="img-fluid">
+                                                </div>
                                                 <div>
-                                                    <span class="text-truncate-1-line">Nancy Elliot</span>
-                                                    <small class="fs-12 fw-normal text-muted">nancy.elliot@outlook.com</small>
+                                                    <span class="text-truncate-1-line">Cute Green</span>
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="fw-bold text-dark">$120.50 USD</td>
-                                        <td>2023-05-20, 03:46PM</td>
-                                        <td><a href="javascript:void(0);">#SDEG4589SE1E</a></td>
+                                        <td><a href="apps-mail.html">cute.green@outlook.com</a></td>
                                         <td>
-                                            <div class="badge bg-soft-warning text-warning">warning</div>
+                                            <div class="hstack gap-2">
+                                                <div class="avatar-text avatar-sm">
+                                                    <i class="feather-github"></i>
+                                                </div>
+                                                <a href="javascript:void(0);">Github</a>
+                                            </div>
+                                        </td>
+                                        <td><a href="tel:"> (632) 5486 662</a></td>
+                                        <td>2023-04-25, 03:42PM</td>
+                                        <td>
+                                            <select class="form-control" data-select2-selector="status">
+                                                <option value="primary" data-bg="bg-primary">New</option>
+                                                <option value="warning" data-bg="bg-warning">Working</option>
+                                                <option value="success" data-bg="bg-success">Qualified</option>
+                                                <option value="danger" data-bg="bg-danger">Declined</option>
+                                                <option value="teal" data-bg="bg-teal">Customer</option>
+                                                <option value="indigo" data-bg="bg-indigo" selected>Contacted</option>
+                                            </select>
                                         </td>
                                         <td>
                                             <div class="hstack gap-2 justify-content-end">
-                                                <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                <a href="leads-view.html" class="avatar-text avatar-md">
                                                     <i class="feather feather-eye"></i>
                                                 </a>
                                                 <div class="dropdown">
@@ -781,27 +887,38 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td><a href="invoice-view.html" class="fw-bold">#741258</a></td>
                                         <td>
-                                            <a href="javascript:void(0)" class="hstack gap-3">
-                                                <div class="avatar-image avatar-md">
-                                                    <img src="assets/images/avatar/2.png" alt="" class="img-fluid">
-                                                </div>
+                                            <a href="leads-view.html" class="hstack gap-3">
+                                                <div class="avatar-image avatar-md bg-success text-white">H</div>
                                                 <div>
-                                                    <span class="text-truncate-1-line">Green Cute</span>
-                                                    <small class="fs-12 fw-normal text-muted">green.cute@outlook.com</small>
+                                                    <span class="text-truncate-1-line">Leach Henry</span>
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="fw-bold text-dark">$300.00 USD</td>
-                                        <td>2023-01-02, 02:35PM</td>
-                                        <td><a href="javascript:void(0);">#SDEG4589SE1E</a></td>
+                                        <td><a href="apps-mail.html">leach.henry@outlook.com</a></td>
                                         <td>
-                                            <div class="badge bg-soft-success text-success">Complted</div>
+                                            <div class="hstack gap-2">
+                                                <div class="avatar-text avatar-sm">
+                                                    <i class="feather-facebook"></i>
+                                                </div>
+                                                <a href="javascript:void(0);">Facebook</a>
+                                            </div>
+                                        </td>
+                                        <td><a href="tel:"> (951) 5478 884</a></td>
+                                        <td>2023-04-14, 03:32PM</td>
+                                        <td>
+                                            <select class="form-control" data-select2-selector="status">
+                                                <option value="primary" data-bg="bg-primary">New</option>
+                                                <option value="warning" data-bg="bg-warning">Working</option>
+                                                <option value="success" data-bg="bg-success">Qualified</option>
+                                                <option value="danger" data-bg="bg-danger">Declined</option>
+                                                <option value="teal" data-bg="bg-teal" selected>Customer</option>
+                                                <option value="indigo" data-bg="bg-indigo">Contacted</option>
+                                            </select>
                                         </td>
                                         <td>
                                             <div class="hstack gap-2 justify-content-end">
-                                                <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                <a href="leads-view.html" class="avatar-text avatar-md">
                                                     <i class="feather feather-eye"></i>
                                                 </a>
                                                 <div class="dropdown">
@@ -861,25 +978,40 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td><a href="invoice-view.html" class="fw-bold">#321456</a></td>
                                         <td>
-                                            <a href="javascript:void(0)" class="hstack gap-3">
-                                                <div class="avatar-image avatar-md bg-teal text-white">H</div>
+                                            <a href="leads-view.html" class="hstack gap-3">
+                                                <div class="avatar-image avatar-md">
+                                                    <img src="assets/images/avatar/5.png" alt="" class="img-fluid">
+                                                </div>
                                                 <div>
-                                                    <span class="text-truncate-1-line">Henry Leach</span>
-                                                    <small class="fs-12 fw-normal text-muted">henry.leach@outlook.com</small>
+                                                    <span class="text-truncate-1-line">Audrey Marianne</span>
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="fw-bold text-dark">$249.99 USD</td>
-                                        <td>2023-04-25,06:35PM</td>
-                                        <td><a href="javascript:void(0);">#SDEG4589SE1E</a></td>
+                                        <td><a href="apps-mail.html">adrey.marine@outlook.com</a></td>
                                         <td>
-                                            <div class="badge bg-soft-danger text-danger">Declined</div>
+                                            <div class="hstack gap-2">
+                                                <div class="avatar-text avatar-sm">
+                                                    <i class="feather-linkedin"></i>
+                                                </div>
+                                                <a href="javascript:void(0);">Linkedin</a>
+                                            </div>
+                                        </td>
+                                        <td><a href="tel:"> (556) 2457 586</a></td>
+                                        <td>2023-04-20, 01:47PM</td>
+                                        <td>
+                                            <select class="form-control" data-select2-selector="status">
+                                                <option value="primary" data-bg="bg-primary">New</option>
+                                                <option value="warning" data-bg="bg-warning">Working</option>
+                                                <option value="success" data-bg="bg-success">Qualified</option>
+                                                <option value="danger" data-bg="bg-danger" selected>Declined</option>
+                                                <option value="teal" data-bg="bg-teal">Customer</option>
+                                                <option value="indigo" data-bg="bg-indigo">Contacted</option>
+                                            </select>
                                         </td>
                                         <td>
                                             <div class="hstack gap-2 justify-content-end">
-                                                <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                <a href="leads-view.html" class="avatar-text avatar-md">
                                                     <i class="feather feather-eye"></i>
                                                 </a>
                                                 <div class="dropdown">
@@ -939,27 +1071,38 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td><a href="invoice-view.html" class="fw-bold">#357895</a></td>
                                         <td>
-                                            <a href="javascript:void(0)" class="hstack gap-3">
-                                                <div class="avatar-image avatar-md">
-                                                    <img src="assets/images/avatar/3.png" alt="" class="img-fluid">
-                                                </div>
+                                            <a href="leads-view.html" class="hstack gap-3">
+                                                <div class="avatar-image avatar-md bg-primary text-white">E</div>
                                                 <div>
-                                                    <span class="text-truncate-1-line">Marianne Audrey</span>
-                                                    <small class="fs-12 fw-normal text-muted">marianne.audrey@outlook.com</small>
+                                                    <span class="text-truncate-1-line">Elliot Nancy</span>
                                                 </div>
                                             </a>
                                         </td>
-                                        <td class="fw-bold text-dark">$150.00 USD</td>
-                                        <td>2023-02-15, 08:36PM</td>
-                                        <td><a href="javascript:void(0);">#SDEG4589SE1E</a></td>
+                                        <td><a href="apps-mail.html">elliot.nancy@outlook.com</a></td>
                                         <td>
-                                            <div class="badge bg-soft-success text-success">Complted</div>
+                                            <div class="hstack gap-2">
+                                                <div class="avatar-text avatar-sm">
+                                                    <i class="feather-twitter"></i>
+                                                </div>
+                                                <a href="javascript:void(0);">Twitter</a>
+                                            </div>
+                                        </td>
+                                        <td><a href="tel:"> (554) 2478 663</a></td>
+                                        <td>2023-04-22, 02:12PM</td>
+                                        <td>
+                                            <select class="form-control" data-select2-selector="status">
+                                                <option value="primary" data-bg="bg-primary">New</option>
+                                                <option value="warning" data-bg="bg-warning">Working</option>
+                                                <option value="success" data-bg="bg-success" selected>Qualified</option>
+                                                <option value="danger" data-bg="bg-danger">Declined</option>
+                                                <option value="teal" data-bg="bg-teal">Customer</option>
+                                                <option value="indigo" data-bg="bg-indigo">Contacted</option>
+                                            </select>
                                         </td>
                                         <td>
                                             <div class="hstack gap-2 justify-content-end">
-                                                <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                <a href="leads-view.html" class="avatar-text avatar-md">
                                                     <i class="feather feather-eye"></i>
                                                 </a>
                                                 <div class="dropdown">
