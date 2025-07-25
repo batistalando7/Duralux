@@ -164,3 +164,23 @@ Route::get('/customers/customersCreate', function(){
     return view('customers.customersCreate.index');
 
 });
+
+/*-------------------------------------------------------
+                    widgets routes
+-------------------------------------------------------*/
+
+Route::get('/widgets/lists', function () {
+    return view('widgets.lists.index');
+});
+Route::get('/widgets/tables', function () {
+    return view('widgets.tables.index');
+});
+Route::get('/widgets/charts', function () {
+    return view('widgets.charts.index');
+});
+Route::get('/widgets/miscellaneous', function () {
+    return view('widgets.miscellaneous.index');
+});
+Route::get('/widgets/statistics', function () {
+    return view('widgets.statistics.index');
+});
