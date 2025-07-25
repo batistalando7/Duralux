@@ -15,7 +15,7 @@
     <title>Duralux || Dashboard</title>
     <!--! END:  Apps Title-->
     <!--! BEGIN: Favicon-->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ url('assets/images/favicon.ico')}}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url('assets/images/favicon.ico')}}">
     <!--! END: Favicon-->
     <!--! BEGIN: Bootstrap CSS-->
     <link rel="stylesheet" type="text/css" href="{{ url('assets/css/bootstrap.min.css')}}" />
@@ -25,7 +25,7 @@
     <link rel="stylesheet" type="text/css" href="{{ url('assets/vendors/css/daterangepicker.min.css')}}" />
     <!--! END: Vendors CSS-->
     <!--! BEGIN: Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="{{ url('assets/css/theme.min.css')" />
+    <link rel="stylesheet" type="text/css" href="{{ url('assets/css/theme.min.css')}}" />
     <!--! END: Custom CSS-->
     <!--! HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries !-->
     <!--! WARNING: Respond.js doesn"t work if you view the page via file: !-->
@@ -36,15 +36,28 @@
 </head>
 
 <body>
-   @include('Payment.Payment.partial.header')
-   @include('Payment.Payment.partial.menu') 
-   @include('Payment.Payment.partial.theme')
+
+     <!--! [Start] Header !-->
+    <!--! ================================================================ !-->
+    @include('Payment.Payment.Parcial.header')
+    <!--! ================================================================ !-->
+    <!--! [Start] Menu !-->
+    @include('Payment.Payment.Parcial.menu')
+    <!--! ================================================================ !-->
+    <!--! [Start] Theme !-->
+    <!--! ================================================================ !-->
+    @include('Payment.Payment.Parcial.theme')
+    <!--! ================================================================ !-->
 
     <div>
-        @yield('conteiner-payment')
+        @yield('container-Payment')
     </div>
-   @include('Payment.Invoice create.Layout.footer')
- 
+
+           <!-- [ Footer ] start -->
+   @include('Payment.Payment.parcial.footer')
+        <!-- [ Footer ] end --> 
+    <!--! Footer Script !-->
+    <!--! ================================================================ !-->
     <!--! BEGIN: Vendors JS !-->
     <script src="{{ url('assets/vendors/js/vendors.min.js')}}"></script>
     <!-- vendors.min.js {always must need to be top} -->

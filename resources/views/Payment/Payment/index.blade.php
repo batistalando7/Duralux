@@ -320,7 +320,11 @@
                                 <div class="d-flex align-items-center justify-content-between">
                                     <div class="hstack gap-3">
                                         <div class="avatar-image avatar-lg p-2 rounded">
+<<<<<<< HEAD
                                             <img class="img-fluid" src="assets/images/brand/shopify.png" alt="" />
+=======
+                                            <img class="img-fluid" src="{{ url('assets/images/brand/shopify.png')}}" alt="" />
+>>>>>>> Antonio
                                         </div>
                                         <div>
                                             <a href="javascript:void(0);" class="d-block">Shopify eCommerce Store</a>
@@ -336,7 +340,11 @@
                                 <div class="d-flex align-items-center justify-content-between">
                                     <div class="hstack gap-3">
                                         <div class="avatar-image avatar-lg p-2 rounded">
+<<<<<<< HEAD
                                             <img class="img-fluid" src="assets/images/brand/app-store.png" alt="" />
+=======
+                                            <img class="img-fluid" src="{{ url('assets/images/brand/app-store.png')}}" alt="" />
+>>>>>>> Antonio
                                         </div>
                                         <div>
                                             <a href="javascript:void(0);" class="d-block">iOS Apps Development</a>
@@ -352,7 +360,11 @@
                                 <div class="d-flex align-items-center justify-content-between">
                                     <div class="hstack gap-3">
                                         <div class="avatar-image avatar-lg p-2 rounded">
+<<<<<<< HEAD
                                             <img class="img-fluid" src="assets/images/brand/figma.png" alt="" />
+=======
+                                            <img class="img-fluid" src="{{ url('assets/images/brand/figma.png')}}" alt="" />
+>>>>>>> Antonio
                                         </div>
                                         <div>
                                             <a href="javascript:void(0);" class="d-block">Figma Dashboard Design</a>
@@ -589,7 +601,11 @@
                                                 <td>
                                                     <div class="d-flex align-items-center gap-3">
                                                         <div class="avatar-image">
+<<<<<<< HEAD
                                                             <img src="assets/images/avatar/2.png" alt="" class="img-fluid" />
+=======
+                                                            <img src="{{ url('assets/images/avatar/2.png')}}" alt="" class="img-fluid" />
+>>>>>>> Antonio
                                                         </div>
                                                         <a href="javascript:void(0);">
                                                             <span class="d-block">Archie Cantones</span>
@@ -612,7 +628,11 @@
                                                 <td>
                                                     <div class="d-flex align-items-center gap-3">
                                                         <div class="avatar-image">
+<<<<<<< HEAD
                                                             <img src="assets/images/avatar/3.png" alt="" class="img-fluid" />
+=======
+                                                            <img src="{{ url('assets/images/avatar/3.png')}}" alt="" class="img-fluid" />
+>>>>>>> Antonio
                                                         </div>
                                                         <a href="javascript:void(0);">
                                                             <span class="d-block">Holmes Cherryman</span>
@@ -635,7 +655,11 @@
                                                 <td>
                                                     <div class="d-flex align-items-center gap-3">
                                                         <div class="avatar-image">
+<<<<<<< HEAD
                                                             <img src="assets/images/avatar/4.png" alt="" class="img-fluid" />
+=======
+                                                            <img src="{{ url('assets/images/avatar/4.png')}}" alt="" class="img-fluid" />
+>>>>>>> Antonio
                                                         </div>
                                                         <a href="javascript:void(0);">
                                                             <span class="d-block">Malanie Hanvey</span>
@@ -658,7 +682,11 @@
                                                 <td>
                                                     <div class="d-flex align-items-center gap-3">
                                                         <div class="avatar-image">
+<<<<<<< HEAD
                                                             <img src="assets/images/avatar/5.png" alt="" class="img-fluid" />
+=======
+                                                            <img src="{{ url('assets/images/avatar/5.png')}}" alt="" class="img-fluid" />
+>>>>>>> Antonio
                                                         </div>
                                                         <a href="javascript:void(0);">
                                                             <span class="d-block">Kenneth Hune</span>
@@ -681,7 +709,11 @@
                                                 <td>
                                                     <div class="d-flex align-items-center gap-3">
                                                         <div class="avatar-image">
+<<<<<<< HEAD
                                                             <img src="assets/images/avatar/6.png" alt="" class="img-fluid" />
+=======
+                                                            <img src="{{ url('assets/images/avatar/6.png')}}" alt="" class="img-fluid" />
+>>>>>>> Antonio
                                                         </div>
                                                         <a href="javascript:void(0);">
                                                             <span class="d-block">Valentine Maton</span>
@@ -775,6 +807,7 @@
                                         </div>
                                         <div class="img-group lh-0 ms-3 justify-content-start d-none d-sm-flex">
                                             <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Janette Dalton">
+<<<<<<< HEAD
                                                 <img src="assets/images/avatar/2.png" class="img-fluid" alt="image" />
                                             </a>
                                             <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Michael Ksen">
@@ -785,6 +818,18 @@
                                             </a>
                                             <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Marianne Audrey">
                                                 <img src="assets/images/avatar/6.png" class="img-fluid" alt="image" />
+=======
+                                                <img src="{{ url('assets/images/avatar/2.png')}}" class="img-fluid" alt="image" />
+                                            </a>
+                                            <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Michael Ksen">
+                                                <img src="{{ url('assets/images/avatar/3.png')}}" class="img-fluid" alt="image" />
+                                            </a>
+                                            <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Socrates Itumay">
+                                                <img src="{{ url('assets/images/avatar/4.png')}}" class="img-fluid" alt="image" />
+                                            </a>
+                                            <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Marianne Audrey">
+                                                <img src="{{ url('assets/images/avatar/6.png')}}" class="img-fluid" alt="image" />
+>>>>>>> Antonio
                                             </a>
                                             <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Explorer More">
                                                 <i class="feather-more-horizontal"></i>
@@ -807,6 +852,7 @@
                                         </div>
                                         <div class="img-group lh-0 ms-3 justify-content-start d-none d-sm-flex">
                                             <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Janette Dalton">
+<<<<<<< HEAD
                                                 <img src="assets/images/avatar/2.png" class="img-fluid" alt="image" />
                                             </a>
                                             <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Michael Ksen">
@@ -817,6 +863,18 @@
                                             </a>
                                             <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Marianne Audrey">
                                                 <img src="assets/images/avatar/6.png" class="img-fluid" alt="image" />
+=======
+                                                <img src="{{ url('assets/images/avatar/2.png')}}" class="img-fluid" alt="image" />
+                                            </a>
+                                            <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Michael Ksen">
+                                                <img src="{{ url('assets/images/avatar/3.png')}}" class="img-fluid" alt="image" />
+                                            </a>
+                                            <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Marianne Audrey">
+                                                <img src="{{ url('assets/images/avatar/5.png')}}" class="img-fluid" alt="image" />
+                                            </a>
+                                            <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Marianne Audrey">
+                                                <img src="{{ url('assets/images/avatar/6.png')}}" class="img-fluid" alt="image" />
+>>>>>>> Antonio
                                             </a>
                                             <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Explorer More">
                                                 <i class="feather-more-horizontal"></i>
@@ -839,6 +897,7 @@
                                         </div>
                                         <div class="img-group lh-0 ms-3 justify-content-start d-none d-sm-flex">
                                             <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Janette Dalton">
+<<<<<<< HEAD
                                                 <img src="assets/images/avatar/2.png" class="img-fluid" alt="image" />
                                             </a>
                                             <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Michael Ksen">
@@ -849,6 +908,18 @@
                                             </a>
                                             <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Marianne Audrey">
                                                 <img src="assets/images/avatar/5.png" class="img-fluid" alt="image" />
+=======
+                                                <img src="{{ url('assets/images/avatar/2.png')}}" class="img-fluid" alt="image" />
+                                            </a>
+                                            <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Michael Ksen">
+                                                <img src="{{ url('assets/images/avatar/3.png')}}" class="img-fluid" alt="image" />
+                                            </a>
+                                            <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Socrates Itumay">
+                                                <img src="{{ url('assets/images/avatar/4.png')}}" class="img-fluid" alt="image" />
+                                            </a>
+                                            <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Marianne Audrey">
+                                                <img src="{{ url('assets/images/avatar/5.png')}}" class="img-fluid" alt="image" />
+>>>>>>> Antonio
                                             </a>
                                             <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Explorer More">
                                                 <i class="feather-more-horizontal"></i>
@@ -871,6 +942,7 @@
                                         </div>
                                         <div class="img-group lh-0 ms-3 justify-content-start d-none d-sm-flex">
                                             <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Janette Dalton">
+<<<<<<< HEAD
                                                 <img src="assets/images/avatar/2.png" class="img-fluid" alt="image" />
                                             </a>
                                             <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Socrates Itumay">
@@ -881,6 +953,18 @@
                                             </a>
                                             <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Marianne Audrey">
                                                 <img src="assets/images/avatar/6.png" class="img-fluid" alt="image" />
+=======
+                                                <img src="{{ url('assets/images/avatar/2.png')}}" class="img-fluid" alt="image" />
+                                            </a>
+                                            <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Socrates Itumay">
+                                                <img src="{{ url('assets/images/avatar/4.png')}}" class="img-fluid" alt="image" />
+                                            </a>
+                                            <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Marianne Audrey">
+                                                <img src="{{ url('assets/images/avatar/5.png')}}" class="img-fluid" alt="image" />
+                                            </a>
+                                            <a href="javascript:void(0)" class="avatar-image avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Marianne Audrey">
+                                                <img src="{{ url('assets/images/avatar/6.png')}}" class="img-fluid" alt="image" />
+>>>>>>> Antonio
                                             </a>
                                             <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Explorer More">
                                                 <i class="feather-more-horizontal"></i>
@@ -932,7 +1016,11 @@
                                 <div class="mb-3">
                                     <div class="mb-4 pb-1 d-flex">
                                         <div class="d-flex w-50 align-items-center me-3">
+<<<<<<< HEAD
                                             <img src="assets/images/brand/app-store.png" alt="laravel-logo" class="me-3" width="35" />
+=======
+                                            <img src="{{ url('assets/images/brand/app-store.png')}}" alt="laravel-logo" class="me-3" width="35" />
+>>>>>>> Antonio
                                             <div>
                                                 <a href="javascript:void(0);" class="text-truncate-1-line">Apps Development</a>
                                                 <div class="fs-11 text-muted">Applications</div>
@@ -948,7 +1036,11 @@
                                     <hr class="border-dashed my-3" />
                                     <div class="mb-4 pb-1 d-flex">
                                         <div class="d-flex w-50 align-items-center me-3">
+<<<<<<< HEAD
                                             <img src="assets/images/brand/figma.png" alt="figma-logo" class="me-3" width="35" />
+=======
+                                            <img src="{{ url('assets/images/brand/figma.png')}}" alt="figma-logo" class="me-3" width="35" />
+>>>>>>> Antonio
                                             <div>
                                                 <a href="javascript:void(0);" class="text-truncate-1-line">Dashboard Design</a>
                                                 <div class="fs-11 text-muted">App UI Kit</div>
@@ -964,7 +1056,11 @@
                                     <hr class="border-dashed my-3" />
                                     <div class="mb-4 pb-1 d-flex">
                                         <div class="d-flex w-50 align-items-center me-3">
+<<<<<<< HEAD
                                             <img src="assets/images/brand/facebook.png" alt="vue-logo" class="me-3" width="35" />
+=======
+                                            <img src="{{ url('assets/images/brand/facebook.png')}}" alt="vue-logo" class="me-3" width="35" />
+>>>>>>> Antonio
                                             <div>
                                                 <a href="javascript:void(0);" class="text-truncate-1-line">Facebook Marketing</a>
                                                 <div class="fs-11 text-muted">Marketing</div>
@@ -980,7 +1076,11 @@
                                     <hr class="border-dashed my-3" />
                                     <div class="mb-4 pb-1 d-flex">
                                         <div class="d-flex w-50 align-items-center me-3">
+<<<<<<< HEAD
                                             <img src="assets/images/brand/github.png" alt="react-logo" class="me-3" width="35" />
+=======
+                                            <img src="{{ url('assets/images/brand/github.png')}}" alt="react-logo" class="me-3" width="35" />
+>>>>>>> Antonio
                                             <div>
                                                 <a href="javascript:void(0);" class="text-truncate-1-line">React Dashboard Github</a>
                                                 <div class="fs-11 text-muted">Dashboard</div>
@@ -996,7 +1096,11 @@
                                     <hr class="border-dashed my-3" />
                                     <div class="d-flex">
                                         <div class="d-flex w-50 align-items-center me-3">
+<<<<<<< HEAD
                                             <img src="assets/images/brand/paypal.png" alt="sketch-logo" class="me-3" width="35" />
+=======
+                                            <img src="{{ url('assets/images/brand/paypal.png')}}" alt="sketch-logo" class="me-3" width="35" />
+>>>>>>> Antonio
                                             <div>
                                                 <a href="javascript:void(0);" class="text-truncate-1-line">Paypal Payment Gateway</a>
                                                 <div class="fs-11 text-muted">Payment</div>
@@ -1054,7 +1158,11 @@
                                 <div class="hstack justify-content-between border border-dashed rounded-3 p-3 mb-3">
                                     <div class="hstack gap-3">
                                         <div class="avatar-image">
+<<<<<<< HEAD
                                             <img src="assets/images/avatar/1.png" alt="" class="img-fluid" />
+=======
+                                            <img src="{{ url('assets/images/avatar/1.png')}}" alt="" class="img-fluid" />
+>>>>>>> Antonio
                                         </div>
                                         <div>
                                             <a href="javascript:void(0);">Alexandra Della</a>
@@ -1066,7 +1174,11 @@
                                 <div class="hstack justify-content-between border border-dashed rounded-3 p-3 mb-3">
                                     <div class="hstack gap-3">
                                         <div class="avatar-image">
+<<<<<<< HEAD
                                             <img src="assets/images/avatar/2.png" alt="" class="img-fluid" />
+=======
+                                            <img src="{{ url('assets/images/avatar/2.png')}}" alt="" class="img-fluid" />
+>>>>>>> Antonio
                                         </div>
                                         <div>
                                             <a href="javascript:void(0);">Archie Cantones</a>
@@ -1078,7 +1190,11 @@
                                 <div class="hstack justify-content-between border border-dashed rounded-3 p-3 mb-3">
                                     <div class="hstack gap-3">
                                         <div class="avatar-image">
+<<<<<<< HEAD
                                             <img src="assets/images/avatar/3.png" alt="" class="img-fluid" />
+=======
+                                            <img src="{{ url('assets/images/avatar/3.png')}}" alt="" class="img-fluid" />
+>>>>>>> Antonio
                                         </div>
                                         <div>
                                             <a href="javascript:void(0);">Malanie Hanvey</a>
@@ -1090,7 +1206,11 @@
                                 <div class="hstack justify-content-between border border-dashed rounded-3 p-3 mb-2">
                                     <div class="hstack gap-3">
                                         <div class="avatar-image">
+<<<<<<< HEAD
                                             <img src="assets/images/avatar/4.png" alt="" class="img-fluid" />
+=======
+                                            <img src="{{ url('assets/images/avatar/4.png')}}" alt="" class="img-fluid" />
+>>>>>>> Antonio
                                         </div>
                                         <div>
                                             <a href="javascript:void(0);">Kenneth Hune</a>
@@ -1108,8 +1228,17 @@
             </div>
             <!-- [ Main Content ] end -->
         </div>
+<<<<<<< HEAD
+=======
+        
+>>>>>>> Antonio
     </main>
     <!--! ================================================================ !-->
     <!--! [End] Main Content !-->
     <!--! ================================================================ !-->
+<<<<<<< HEAD
     @endsection
+=======
+    @endsection
+
+>>>>>>> Antonio

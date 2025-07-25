@@ -3,8 +3,8 @@
          <div class="m-header">
              <a href="/" class="b-brand">
                  <!-- ========   change your logo hear   ============ -->
-                 <img src="assets/images/logo-full.png" alt="" class="logo logo-lg" />
-                 <img src="assets/images/logo-abbr.png" alt="" class="logo logo-sm" />
+                 <img src="{{ url('assets/images/logo-full.png')}}" alt="" class="logo logo-lg" />
+                 <img src="{{ url('assets/images/logo-abbr.png')}}" alt="" class="logo logo-sm" />
              </a>
          </div>
          <div class="navbar-content">
@@ -54,10 +54,10 @@
                          <span class="nxl-mtext">Proposal</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                      </a>
                      <ul class="nxl-submenu">
-                         <li class="nxl-item"><a class="nxl-link" href="proposal.html">Proposal</a></li>
-                         <li class="nxl-item"><a class="nxl-link" href="proposal-view.html">Proposal View</a></li>
-                         <li class="nxl-item"><a class="nxl-link" href="proposal-edit.html">Proposal Edit</a></li>
-                         <li class="nxl-item"><a class="nxl-link" href="proposal-create.html">Proposal Create</a></li>
+                         <li class="nxl-item"><a class="nxl-link" href="/proposal">Proposal</a></li>
+                         <li class="nxl-item"><a class="nxl-link" href="/proposal/proposalView">Proposal View</a></li>
+                         <li class="nxl-item"><a class="nxl-link" href="/proposal/proposalEdit">Proposal Edit</a></li>
+                         <li class="nxl-item"><a class="nxl-link" href="/proposal/proposalCreate">Proposal Create</a></li>
                      </ul>
                  </li>
                  <li class="nxl-item nxl-hasmenu">
