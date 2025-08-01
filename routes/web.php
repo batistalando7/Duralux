@@ -18,3 +18,6 @@ Route::get('/Analytics', function () {
     return view('dashboard.Analytics.index');
 });
 
+Route::get('/',function (){
+    return view('home.main');
+});
