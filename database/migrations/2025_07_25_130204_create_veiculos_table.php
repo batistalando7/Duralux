@@ -17,7 +17,7 @@ class CreateVeiculosTable extends Migration
             $table->id();
             $table->string('placa')->unique();
             $table->string('chassi')->unique();
-            $table->enum ('tipo_veiculo', ['carro', 'moto', 'barco']);
+            $table->enum ('tipoVeiculo', ['carro', 'moto', 'barco']);
             $table->enum ('categoria', ['luxuoso', 'medio', 'baixo'])->default('medio');
             $table->string('numero_motor')->unique();
             $table->string('numero_serie')->unique();
