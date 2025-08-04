@@ -19,9 +19,10 @@ use Illuminate\Support\Facades\Route;
 /*-------------------------------------------------------
                     Dashboard routes
 -------------------------------------------------------*/
-Route::get('/', function () {
+Route::get('/dashboard', function () {
     return view('dashboard.crm.index');
 });
+
 
 Route::get('/analytics', function () {
     return view('dashboard.Analytics.index');
@@ -209,4 +210,7 @@ Route::get('/widgets/miscellaneous', function () {
 Route::get('/widgets/statistics', function () {
     return view('widgets.statistics.index');
 });
-/*
+
+Route::get('/',function (){
+    return view('home.main');
+});
