@@ -210,7 +210,7 @@ Route::get('/widgets/statistics', function () {
     return view('widgets.statistics.index');
 });
 
-<<<<<<< HEAD
+
 /*-------------------------------------------------------
                     authentication routes
 -------------------------------------------------------*/
@@ -238,5 +238,3 @@ Route::get('/authentication/reset_pass/creative', function () {
 Route::get('/authentication/verify_otp/creative', function () {
     return view('authentication.verify_otp.creative.index');
 });
-=======
->>>>>>> 8464611d7cb057402b2cbb6548cd68558a5ea7d4
