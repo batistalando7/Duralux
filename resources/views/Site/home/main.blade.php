@@ -32,7 +32,7 @@
         <link rel="stylesheet" href="{{ url('assets/user/css/nice-select.css')}}">
         <!--<< Main.css >>-->
         <link rel="stylesheet" href="{{ url('assets/user/css/main.css')}}">
-    </head>
+</head>
     <body>
 
         <!-- Preloader Start -->
@@ -443,8 +443,8 @@
                        <button class="pickup-btn" type="submit">
                             Find a Car
                        </button>
-                    </div>
-                -->
+                    </div>  -->
+
                 </div>
                 <div class="brand-wrapper pt-80 pb-80">
                    <!-- <div class="array-button">
@@ -1098,7 +1098,7 @@
                 </div>
             </div>
         </section>
-    -->
+         -->
 
         <!-- Select Car Section Start -->
         <section class="select-car-section section-padding fix">
