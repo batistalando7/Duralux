@@ -242,3 +242,19 @@ Route::get('/authentication/verify_otp/creative', function () {
 Route::get('/',function (){
     return view('Site.home.main');
 });
+
+/*-------------------------------------------------------
+                    color routes
+-------------------------------------------------------*/
+
+Route::prefix('colors')->name('colors.')->group(function () {
+    Route::get('/', [ColorController::class, 'index'])->name('index');
+    Route::get('/create', [ColorController::class, 'create'])->name('create');
+    Route::post('/', [ColorController::class, 'store'])->name('store');
+    Route::get('/{color}', [ColorController::class, 'show'])->name('show');
+    Route::get('/{color}/edit', [ColorController::class, 'edit'])->name('edit');
+    Route::put('/{color}', [ColorController::class, 'update'])->name('update');
+    Route::delete('/{color}', [ColorController::class, 'destroy'])->name('destroy');
+    Route::get('/trashed', [ColorController::class, 'trashed'])->name('trashed');
+    Route::post('/{color}/restore', [ColorController::class, 'restore'])->name('restore');
+});
