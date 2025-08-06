@@ -5,24 +5,18 @@ namespace App\Model;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Supplier extends Model
+class Brand extends Model
 {
     //
-    use SoftDeletes;
     protected $fillable = [
-        'name',
-        'email',
-        'phone',
-        'nif',
-        'vehicleLogbookUpload',
-        'biUpload',
-        'image',
-        'address',
-        'city',
-        'country'
+        'description'
     ];
     public function automobiles()
     {
         return $this->hasMany(Automobile::class);
     }
+    public function models()
+    {
+        return $this->hasMany(Model::class);            
+    }   
 }

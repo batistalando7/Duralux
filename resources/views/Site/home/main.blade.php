@@ -33,7 +33,7 @@
         <!--<< Main.css >>-->
         <link rel="stylesheet" href="{{ url('assets/user/css/main.css')}}">
 </head>
-    <body>
+<body>
 
         <!-- Preloader Start -->
         <div id="preloader" class="preloader">
@@ -86,6 +86,7 @@
                 <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
             </svg>
         </div>
+        
 
         <!-- Offcanvas Area Start -->
         <div class="fix-area">
@@ -1787,7 +1788,7 @@
         <script src="{{ url('assets/user/js/wow.min.js')}}"></script>
         <!--<< Main.js >>-->
         <script src="{{ url('assets/user/js/main.js')}}"></script>
-    </body>
+</body>
 
 <!-- Mirrored from pixydrops.com/remons/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Jul 2025 11:19:42 GMT -->
 </html>

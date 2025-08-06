@@ -3,8 +3,9 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
-class CreateSuppliersTable extends Migration
+class Suppliers extends Migration
 {
     /**
      * Run the migrations.
@@ -19,16 +20,15 @@ class CreateSuppliersTable extends Migration
             $table->string('email')->unique();
             $table->string('phone')->nullable();
             $table->string('nif', 20)->nullable();
-            $table->string('vehicle_logbook_upload')->nullable();
-            $table->string('bi_upload')->nullable();
+            $table->string('vehicleLogbookUpload')->nullable();
+            $table->string('biUpload')->nullable();
             $table->string('image')->nullable();
             $table->string('address')->nullable();
             $table->string('city')->nullable();
             $table->string('country')->nullable();
             $table->timestamps();
             $table->softDeletes();
-
-        });
+     });
     }
 
     /**
@@ -38,6 +38,6 @@ class CreateSuppliersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('suppliers');
+        //
     }
 }
