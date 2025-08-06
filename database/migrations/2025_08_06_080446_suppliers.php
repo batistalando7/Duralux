@@ -21,6 +21,7 @@ class Suppliers extends Migration
             $table->string('phone')->nullable();
             $table->string('nif', 20)->nullable();
             $table->string('vehicleLogbookUpload')->nullable();
+            $table->string('bi')->unique();
             $table->string('biUpload')->nullable();
             $table->string('image')->nullable();
             $table->string('address')->nullable();
