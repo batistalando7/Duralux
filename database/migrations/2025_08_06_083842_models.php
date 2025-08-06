@@ -3,8 +3,9 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
-class CreateCorsTable extends Migration
+class Models extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +14,12 @@ class CreateCorsTable extends Migration
      */
     public function up()
     {
-        Schema::create('cors', function (Blueprint $table) {
+        //
+            Schema::create('models', function (Blueprint $table) {
             $table->id();
-            $table->string('cor')->unique();
+            $table->softDeletes();
+            $table->string('description')->nullable();
+            $table->foreignId('brandId')->constrained('brands')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -27,6 +31,6 @@ class CreateCorsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cors');
+        //
     }
 }

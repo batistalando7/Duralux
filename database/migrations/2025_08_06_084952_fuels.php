@@ -3,8 +3,9 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
-class CreateModelosTable extends Migration
+class Fuels extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +14,11 @@ class CreateModelosTable extends Migration
      */
     public function up()
     {
-        Schema::create('modelos', function (Blueprint $table) {
+        //
+            Schema::create('fuels', function (Blueprint $table) {
             $table->id();
-            $table->string('nome')->unique();
-            $table->foreignId('marca_id')->constrained('marcas')->onDelete('cascade');
+            $table->softDeletes();
+            $table->enum('type', ['Gasoline', 'Electric', 'Diesel', 'Hybrid'])->default('Gasoline');
             $table->timestamps();
         });
     }
@@ -28,6 +30,6 @@ class CreateModelosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('modelos');
+        //
     }
 }

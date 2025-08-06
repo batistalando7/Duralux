@@ -3,8 +3,9 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
-class CreateMarcasTable extends Migration
+class Colors extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +14,11 @@ class CreateMarcasTable extends Migration
      */
     public function up()
     {
-        Schema::create('marcas', function (Blueprint $table) {
+        //
+         Schema::create('colors', function (Blueprint $table) {
             $table->id();
-            $table->string('nome')->unique();
+            $table->softDeletes();
+            $table->string('description')->unique();
             $table->timestamps();
         });
     }
@@ -27,6 +30,6 @@ class CreateMarcasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('marcas');
+        //
     }
 }
